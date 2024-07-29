@@ -1,0 +1,759 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+.home {
+    width: 100%;
+    height: 100vh;
+    background: url('/home-img.png');
+    background-size: cover;
+    background-position: center;
+}
+
+
+.home .container {
+    background-image: linear-gradient(to bottom, #06060600, #000000db);
+    width: 100%;
+    height: 100%;
+}
+
+.center {
+    display: flex;
+    width: 100%;
+    height: 75%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    height: 100%;
+    align-items: start;
+    color: white;
+    gap: 2rem;
+    width: 75%;
+}
+
+.container h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+.content p {
+    font-size: 20px;
+}
+
+.container form {
+    padding: .7rem 1.5rem;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    gap: 2rem;
+    border-radius: 45px;
+    width: 65vw;
+    min-width: 50vw;
+}
+
+.container form div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    color: black;
+    gap: 4px;
+}
+
+.container form .input {
+    width: 13rem;
+}
+
+.container form .guest {
+    width: 8rem;
+}
+
+.container .checkButton {
+    padding: .5rem 1rem;
+    background-color: #0046B9;
+    border: none;
+    font-weight: 600;
+    border-radius: 15px;
+    color: white;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: .5s;
+}
+
+.container .checkButton:hover {
+    background-color: transparent;
+    border: 2px solid #0046B9;
+    color: black;
+}
+
+
+@media screen and (min-width: 1462px) {
+    .container form {
+        gap: 4rem;
+    }
+}
+
+@media (max-width: 1461px) and (min-width: 1281px) {
+    .container h1 {
+        font-size: 5rem;
+    }
+
+    .container p {
+        font-size: 3rem;
+    }
+
+    .container form {
+        height: 5.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        gap: 2rem;
+        border-radius: 45px;
+        width: 70vw;
+    }
+
+    .container form div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        color: black;
+        gap: 4px;
+    }
+
+    .container input {
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 10rem;
+        outline: none;
+    }
+
+    .container .guest {
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        outline: none;
+        width: 10rem;
+    }
+
+
+
+    .container .checkButton {
+        padding: .5rem 1.5rem;
+        background-color: #0046B9;
+        border: none;
+        font-weight: 600;
+        border-radius: 15px;
+        color: white;
+        cursor: pointer;
+        border: 2px solid transparent;
+        transition: .5s;
+    }
+
+}
+
+@media (max-width: 1280px) and (min-width: 988px) {
+    .container form {
+        gap: 1rem;
+        height: 5.5rem;
+        width: 82vw;
+    }
+
+    .container form .input {
+        width: 14rem;
+    }
+}
+
+@media (max-width: 987px) and (min-width: 891px) {
+    .container form {
+        gap: 1rem;
+        width: 87vw;
+    }
+
+    .container form .input {
+        width: 12rem;
+    }
+
+    .container form .checkButton {
+        width: .5rem .8rem;
+    }
+
+    .center .content {
+        gap: 2rem;
+    }
+
+    .center {
+        width: 75%;
+    }
+}
+
+@media (max-width: 890px) and (min-width: 769px) {
+    .container form {
+        gap: 1rem;
+        width: 87vw;
+    }
+
+    .container form .input {
+        width: 10rem;
+    }
+
+    .container form .checkButton {
+        width: .5rem .6rem;
+    }
+
+    .container form .guest {
+        width: 6.5rem;
+    }
+
+    .center .content {
+        gap: 2rem;
+    }
+
+    .center {
+        width: 75%;
+    }
+}
+
+@media (max-width: 768px) and (min-width: 695px) {
+    .center {
+        height: 80%;
+        width: 55%;
+    }
+
+    .container form {
+        width: 200%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        padding: 10px 4rem;
+        gap: 1rem 1rem;
+    }
+
+    .container form div {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        width: 100%;
+    }
+
+    .container form .checkButton {
+        width: 100%;
+    }
+
+    .container form .input {
+        width: 100%;
+    }
+
+    .container form .guest {
+        width: 100%;
+    }
+
+    .content h1 {
+        font-size: 2.5rem;
+        width: 20rem;
+    }
+
+    .content p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 694px) and (min-width: 654px) {
+    .center {
+        height: 80%;
+        width: 55%;
+    }
+
+    .container form {
+        width: 200%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        padding: 10px 4rem;
+        gap: 1rem 1rem;
+    }
+
+    .container form div {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        width: 100%;
+    }
+
+    .container form .checkButton {
+        width: 100%;
+    }
+
+    .container form .input {
+        width: 80%;
+    }
+
+    .container form .guest {
+        width: 80%;
+    }
+
+
+    .content h1 {
+        font-size: 2.5rem;
+        width: 20rem;
+    }
+
+    .content p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 653px) and (min-width: 556px) {
+    .center {
+        height: 80%;
+        width: 55%;
+    }
+
+    .container form {
+        width: 200%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        padding: 10px 2rem;
+        gap: 1rem 1rem;
+    }
+
+    .container form div {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        width: 100%;
+    }
+
+    .container form .checkButton {
+        width: 100%;
+    }
+
+    .container form .guest {
+        width: 100%;
+    }
+
+    .container form .input {
+        width: 100%;
+    }
+
+
+    .content h1 {
+        font-size: 2.5rem;
+        width: 20rem;
+    }
+
+    .content p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 555px) and (min-width: 481px) {
+    .center {
+        height: 80%;
+        width: 55%;
+    }
+
+    .container form {
+        width: 220%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        padding: 10px 2rem;
+        gap: 1rem 1rem;
+    }
+
+    .container form .checkButton {
+        width: 100%;
+    }
+
+    .container form div {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        width: 100%;
+    }
+
+    .container form .guest {
+        width: 100%;
+    }
+
+    .container form .input {
+        width: 100%;
+    }
+
+    .content h1 {
+        font-size: 2.5rem;
+        width: 20rem;
+    }
+
+    .content p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) and (min-width: 420px) {
+    .center {
+        height: 80%;
+        width: 55%;
+    }
+
+    .container form {
+        width: 200%;
+        height: 20rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container form .checkButton {
+        width: 100%;
+    }
+
+    .container form div {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        gap: 0;
+        width: 100%;
+    }
+
+
+    .container form div .checkInDate {
+        position: relative;
+        left: 2rem;
+        width: 65%;
+    }
+
+    .container form div .checkOutDate {
+        position: relative;
+        left: 1rem;
+        width: 65%;
+    }
+
+    .container form div .guest {
+        width: 65%;
+        position: relative;
+        left: 3rem;
+    }
+
+
+    .content {
+        height: 120%;
+    }
+
+    .content h1 {
+        font-size: 2.3rem;
+        width: 18rem;
+    }
+
+
+    .content p {
+        font-size: .7rem;
+    }
+}
+
+@media (max-width: 419px) and (min-width: 0) {
+    .center {
+        height: 80%;
+        width: 55%;
+    }
+
+    .container form {
+        width: 200%;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 2rem;
+        gap: 1.1rem;
+    }
+
+    .container form .checkButton {
+        width: 100%;
+    }
+
+    .container form div {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        gap: 5px;
+        width: 100%;
+    }
+
+    .container form .input {
+        width: 100%;
+    }
+
+    .container form .guest {
+        width: 100%;
+    }
+
+    .content {
+        height: 120%;
+    }
+
+    .content h1 {
+        font-size: 2.3rem;
+        width: 18rem;
+    }
+
+
+    .content p {
+        font-size: .7rem;
+    }
+}
+
+
+/* Gallery with Responsive */
+
+.gallery {
+    width: 100%;
+    height: auto;
+    padding: 3rem;
+    background: black url('/about-bg.png');
+    background-position: center;
+    background-size: cover;
+}
+
+
+.gallery .title {
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    font-family: "Playfair Display";
+    letter-spacing: 3px;
+}
+
+.gallery .galleryContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.galleryContainer .galleryContent {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+}
+
+.galleryContainer .leftContent {
+    color: white;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.galleryContainer .contentText {
+    width: 30rem;
+    text-align: center;
+}
+
+.contentText h1 {
+    margin-bottom: 1rem;
+    font-family: 'Playfiar Display';
+    font-size: 2rem;
+    padding: 0 1rem;
+}
+
+.contentText p {
+    line-height: 2rem;
+    font-size: 1.3rem;
+    font-weight: 200;
+}
+
+@media screen and (min-width: 1281px) {
+    .gallery .title {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width:1025px) and (min-width:876px) {
+    .contentImg .galleryImg {
+        width: 320px;
+        height: 300px;
+    }
+
+    .contentText h1 {
+        font-size: 2rem;
+    }
+
+    .contentText p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 875px) and (min-width: 769px) {
+    .contentText p {
+        font-size: 16px;
+    }
+
+    .contentText h1 {
+        font-size: 1.7rem;
+    }
+
+    .contentImg .galleryImg {
+        width: 320px;
+        height: 300px;
+    }
+}
+
+
+@media (max-width: 768px) and (min-width: 578px) {
+    .galleryContainer .galleryContent {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width: 777px) and (min-width: 582px) {
+    .galleryContainer .galleryContent {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .galleryContainer .contentText {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contentText p {
+        font-size: 20px;
+    }
+
+    .contentImg .galleryImg {
+        width: 450px;
+        height: 350px;
+    }
+}
+
+@media (max-width: 581px) and (min-width: 481px) {
+    .galleryContainer .galleryContent {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contentText {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 24rem;
+    }
+
+    .contentText h1 {
+        font-size: 1.7rem;
+    }
+
+    .contentText p {
+        font-size: 18px;
+        width: 70%;
+    }
+
+    .contentImg .galleryImg {
+        width: 400px;
+        height: 300px;
+    }
+}
+
+@media (max-width: 507px) and (min-width: 483px) {
+    .galleryContainer .galleryContent {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .gallery .title {
+        font-size: 1.7rem;
+    }
+
+    .contentText {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 24rem;
+    }
+
+    .contentText p {
+        font-size: 18px;
+        width: 75%;
+    }
+}
+
+@media (max-width: 482px) and (min-width: 413px) {
+    .galleryContainer .galleryContent {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .gallery .title {
+        font-size: 1.7rem;
+    }
+
+
+
+    .galleryContent .contentText {
+        width: 22rem;
+    }
+
+    .contentImg .galleryImg {
+        width: 350px;
+        height: 280px;
+    }
+
+
+    .contentText p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 412px) and (min-width: 0) {
+    .galleryContainer .galleryContent {
+        color: white;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .gallery .title {
+        font-size: 1.3rem;
+    }
+
+    .galleryContent .contentText {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 20rem;
+    }
+
+    .contentImg .galleryImg {
+        width: 320px;
+        height: 260px;
+    }
+
+
+    .contentText p {
+        font-size: 16px;
+    }
+
+    .contentText h1 {
+        font-size: 1.4rem;
+    }
+}

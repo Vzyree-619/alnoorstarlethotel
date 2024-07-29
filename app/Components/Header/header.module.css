@@ -1,0 +1,118 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: .5rem 1rem;
+    width: 100%;
+}
+
+.header button {
+    display: none;
+}
+
+.logo {
+    width: 270px;
+    height: 50px;
+    mix-blend-mode: multiply;
+}
+
+.header nav {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.header nav a {
+    color: black;
+    transition: .5s;
+}
+
+.header nav .active {
+    font-weight: 700;
+    color: #FF0000;
+}
+
+.header nav a:hover {
+    font-weight: 700;
+    color: #FF0000;
+}
+
+
+.header .button {
+    padding: .5rem 1rem;
+    background-color: #FF0000;
+    border: none;
+    font-weight: 600;
+    border-radius: 15px;
+    color: white;
+    border: 2px solid transparent;
+    transition: .5s;
+}
+
+.header .button:hover {
+    color: black;
+    background-color: transparent;
+    border: 2px solid #FF0000;
+}
+
+
+@media screen and (min-width: 1280px) {
+    .header {
+        width: 100%;
+        gap: 20rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+
+    .nav {
+        position: absolute;
+        top: -87vh;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        transition: top 1s ease-in-out;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 2rem 0;
+        z-index: 100;
+        height: 87vh;
+    }
+
+    .nav.open {
+        top: 100%;
+        height: 87vh;
+    }
+
+    .nav a {
+        text-decoration: none;
+        color: black;
+        padding: 1rem 2rem;
+        font-size: 1.2rem;
+        transition: background-color 1s ease;
+    }
+
+    .header .menuButton {
+        position: relative;
+        z-index: 100;
+        font-size: 1.5rem;
+        color: black;
+        display: flex;
+        align-items: center;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+
+}

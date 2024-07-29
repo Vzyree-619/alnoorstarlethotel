@@ -1,0 +1,494 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+.mainRoom {
+    width: 80%;
+}
+
+.roomMain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.formContainer {
+    width: 100%;
+    height: auto;
+    padding: 2.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formContainer form {
+    padding: .7rem 1.5rem;
+    background-color: white;
+    display: flex;
+    border: 1px solid #FF0000;
+    justify-content: center;
+    align-items: end;
+    gap: 2rem;
+    border-radius: 45px;
+    width: 65vw;
+    min-width: 50vw;
+}
+
+.formContainer form div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    color: black;
+    gap: 4px;
+}
+
+.formContainer form .input {
+    width: 13rem;
+}
+
+.formContainer form .guest {
+    width: 8rem;
+}
+
+.formContainer .checkButton {
+    padding: .5rem 1rem;
+    background-color: #0046B9;
+    border: none;
+    font-weight: 600;
+    border-radius: 15px;
+    color: white;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: .5s;
+}
+
+.formContainer .checkButton:hover {
+    background-color: transparent;
+    border: 2px solid #0046B9;
+    color: black;
+}
+
+
+@media screen and (min-width: 1462px) {
+    .formContainer form {
+        gap: 4rem;
+    }
+}
+
+.roomCard {
+    width: 100%;
+    height: auto;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+@media (max-width: 1461px) and (min-width: 1281px) {
+    .container h1 {
+        font-size: 5rem;
+    }
+
+    .container p {
+        font-size: 3rem;
+    }
+
+    .formContainer form {
+        height: 5.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        gap: 2rem;
+        border-radius: 45px;
+        width: 70vw;
+    }
+
+    .formContainer form div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        color: black;
+        gap: 4px;
+    }
+
+    .formContainer input {
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 10rem;
+    }
+
+    .formContainer .guest {
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 10rem;
+    }
+
+    .formContainer .checkButton {
+        padding: .5rem 1.5rem;
+        background-color: #0046B9;
+        border: none;
+        font-weight: 600;
+        border-radius: 15px;
+        color: white;
+        cursor: pointer;
+        border: 2px solid transparent;
+        transition: .5s;
+    }
+
+}
+
+@media (max-width: 1280px) and (min-width: 988px) {
+    .formContainer form {
+        gap: 1rem;
+        height: 5.5rem;
+        width: 90vw;
+    }
+
+    .formContainer form .input {
+        width: 14rem;
+    }
+}
+
+@media (max-width: 987px) and (min-width: 891px) {
+    .formContainer form {
+        gap: 1rem;
+        width: 87vw;
+    }
+
+    .formContainer form .input {
+        width: 12rem;
+    }
+
+    .formContainer form .checkButton {
+        width: .5rem .8rem;
+    }
+
+    .center .content {
+        gap: 2rem;
+    }
+
+    .center {
+        width: 75%;
+    }
+}
+
+@media (max-width: 890px) and (min-width: 769px) {
+    .formContainer form {
+        gap: 1rem;
+        width: 93vw;
+    }
+
+    .formContainer form .input {
+        width: 10rem;
+    }
+
+    .formContainer form .checkButton {
+        width: .5rem .6rem;
+    }
+
+    .formContainer form .guest {
+        width: 6.5rem;
+    }
+
+    .center .content {
+        gap: 2rem;
+    }
+
+    .center {
+        width: 75%;
+    }
+}
+
+@media (max-width: 768px) and (min-width: 695px) {
+    .center {
+        height: 80%;
+        width: 55%;
+    }
+
+    .formContainer form {
+        width: 200%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        padding: 10px 4rem;
+        gap: 1rem 1rem;
+    }
+
+    .formContainer form .checkButton {
+        width: 100%;
+    }
+
+    .formContainer form div {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        width: 100%;
+    }
+
+    .formContainer form .input {
+        width: 100%;
+    }
+
+    .formContainer form .guest {
+        width: 100%;
+    }
+
+    .content h1 {
+        font-size: 2.5rem;
+        width: 20rem;
+    }
+
+    .content p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 694px) and (min-width: 654px) {
+    .center {
+        height: 80%;
+        width: 55%;
+    }
+
+    .formContainer form {
+        width: 200%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        padding: 10px 4rem;
+        gap: 1rem 1rem;
+    }
+
+    .formContainer form div {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        width: 100%;
+    }
+
+    .formContainer form .checkButton {
+        width: 100%;
+    }
+
+    .formContainer form .input {
+        width: 80%;
+    }
+
+    .formContainer form .guest {
+        width: 80%;
+    }
+
+
+    .content h1 {
+        font-size: 2.5rem;
+        width: 20rem;
+    }
+
+    .content p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 653px) and (min-width: 556px) {
+    .center {
+        height: 80%;
+        width: 55%;
+    }
+
+    .formContainer form {
+        width: 200%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        padding: 10px 2rem;
+        gap: 1rem 1rem;
+    }
+
+    .formContainer form .checkButton {
+        width: 100%;
+    }
+
+    .formContainer form div {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        width: 100%;
+    }
+
+    .formContainer form .guest {
+        width: 100%;
+    }
+
+    .formContainer form .input {
+        width: 100%;
+    }
+
+
+    .content h1 {
+        font-size: 2.5rem;
+        width: 20rem;
+    }
+
+    .content p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 555px) and (min-width: 481px) {
+    .center {
+        height: 80%;
+        width: 55%;
+    }
+
+    .formContainer form {
+        width: 220%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        padding: 10px 2rem;
+        gap: 1rem 1rem;
+    }
+
+    .formContainer form div {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        width: 100%;
+    }
+
+    .formContainer form .checkButton {
+        width: 100%;
+    }
+
+    .formContainer form .guest {
+        width: 100%;
+    }
+
+    .formContainer form .input {
+        width: 100%;
+    }
+
+    .content h1 {
+        font-size: 2.5rem;
+        width: 20rem;
+    }
+
+    .content p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) and (min-width: 420px) {
+    .center {
+        height: 80%;
+        width: 55%;
+    }
+
+    .formContainer form {
+        width: 200%;
+        height: 20rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .formContainer form div {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        gap: 0;
+        width: 100%;
+    }
+
+    .formContainer form .checkButton {
+        width: 100%;
+    }
+
+    .formContainer form div .checkInDate {
+        position: relative;
+        left: 2rem;
+        width: 65%;
+    }
+
+    .formContainer form div .checkOutDate {
+        position: relative;
+        left: 1rem;
+        width: 65%;
+    }
+
+    .formContainer form div .guest {
+        width: 65%;
+        position: relative;
+        left: 3rem;
+    }
+
+
+    .content {
+        height: 120%;
+    }
+
+    .content h1 {
+        font-size: 2.3rem;
+        width: 18rem;
+    }
+
+
+    .content p {
+        font-size: .7rem;
+    }
+}
+
+@media (max-width: 419px) and (min-width: 0) {
+    .center {
+        height: 80%;
+        width: 55%;
+    }
+
+    .formContainer form {
+        width: 200%;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 2rem;
+        gap: 1.1rem;
+    }
+
+    .formContainer form div {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        gap: 5px;
+        width: 100%;
+    }
+
+    .formContainer form .checkButton {
+        width: 100%;
+    }
+
+    .formContainer form .input {
+        width: 100%;
+    }
+
+    .formContainer form .guest {
+        width: 100%;
+    }
+
+    .content {
+        height: 120%;
+    }
+
+    .content h1 {
+        font-size: 2.3rem;
+        width: 18rem;
+    }
+
+
+    .content p {
+        font-size: .7rem;
+    }
+}

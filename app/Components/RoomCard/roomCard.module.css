@@ -1,0 +1,431 @@
+.roomColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    gap: 2rem;
+}
+
+.roomRows {
+    width: 75%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 2rem;
+    background-color: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.64);
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.roomRows .rowImg {
+    width: 18rem;
+    /* height: 325px; */
+    object-fit: contain;
+}
+
+.roomRows .rowImg img {
+    width: 100%;
+    height: 100%;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.firstColumn {
+    display: grid;
+    width: 35rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+.firstColumn .title {
+    font-size: 2rem;
+    color: #F40000;
+    font-weight: 700;
+}
+
+.firstColumn button {
+    padding: .5rem 1.5rem;
+    background-color: #FF0000;
+    border: none;
+    font-weight: 500;
+    border-radius: 15px;
+    color: white;
+    border: 2px solid transparent;
+    transition: .5s;
+}
+
+.firstColumn button:hover {
+    color: black;
+    background-color: transparent;
+    border: 1px solid #FF0000;
+}
+
+.firstColumn h3 {
+    display: flex;
+    font-size: 1.5rem;
+    flex-direction: column;
+    align-self: center;
+    width: fit-content;
+}
+
+.firstColumn h3 sub {
+    align-self: flex-end;
+    font-size: .9rem;
+}
+
+.secondColumn {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.secondColumn .button:first-child {
+    background-color: #018216;
+    padding: .5rem 1rem;
+    font-weight: 500;
+    border-radius: 15px;
+    color: white;
+    border: 1px solid #FF0000;
+    transition: .5s;
+
+}
+
+.secondColumn .transparentButton {
+    padding: .5rem 1rem;
+    background-color: transparent;
+    font-weight: 500;
+    border-radius: 15px;
+    color: black;
+    border: 1px solid #FF0000;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.secondColumn .transparentButton:hover {
+    background-color: #0046B9;
+    border: 1px solid #FF0000;
+    color: white;
+}
+
+.thirdColumn {
+    width: 33rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 35rem;
+}
+
+.thirdColumn h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.thirdColumn .detailsButton {
+    padding: .5rem 1rem;
+    background-color: #0046B9;
+    border-radius: 15px;
+    color: white;
+    border: 1px solid transparent;
+    transition: .5s;
+}
+
+.thirdColumn button:hover {
+    background-color: transparent;
+    border: 1px solid #0046B9;
+    color: black;
+}
+
+.thirdColumn span {
+    display: flex;
+    color: #F29D38;
+    gap: 5px;
+    font-size: 1.1rem;
+}
+
+@media screen and (min-width: 1281px) {
+    .roomRows {
+        width: 60rem;
+    }
+}
+
+@media (max-width: 1280px) and (min-width: 646px) {
+    .roomRows {
+        width: 58rem;
+        /* gap: 1rem; */
+    }
+
+    /* 
+    .roomColumn {
+        width: 75%;
+    } */
+}
+
+@media (max-width:945px) and (min-width: 769px) {
+    .secondColumn {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        width: 25rem;
+        gap: 10px;
+    }
+
+    .roomRows {
+        width: 45rem;
+        gap: 1rem;
+    }
+
+    .firstColumn .title {
+        font-size: 1.5rem;
+    }
+
+    .firstColumn button {
+        width: 10rem;
+    }
+
+    .roomRows .rowImg {
+        width: 20rem;
+    }
+
+    .firstColumn {
+        display: grid;
+        width: 25rem;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        justify-content: center;
+        column-gap: 5rem;
+        align-items: center;
+    }
+
+    .thirdColumn {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 25rem;
+    }
+
+    .secondColumn .rowImg {
+        width: 30rem;
+        height: 20rem;
+        object-fit: cover;
+    }
+
+    .secondColumn .transparentButton {
+        padding: .5rem .6rem;
+        width: 12rem;
+        font-weight: 500;
+        border-radius: 15px;
+        color: black;
+        border: 1px solid #FF0000;
+        transition: .5s;
+        cursor: pointer;
+    }
+
+    /* .roomColumn {
+        width: 90%;
+    } */
+}
+
+@media (max-width:768px) and (min-width:481px) {
+    .roomRows {
+        display: flex;
+        flex-direction: column;
+        width: 90vw;
+    }
+
+    .roomRows .rowImg {
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .firstColumn {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        height: 6rem;
+    }
+
+    .firstColumn .title {
+        font-size: 2rem;
+    }
+
+    .firstColumn p {
+        text-align: center;
+    }
+
+    .secondColumn {
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        justify-content: center;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .thirdColumn {
+        width: 100%;
+    }
+}
+
+@media (max-width:480px) and (min-width:381px) {
+    .roomRows {
+        display: flex;
+        flex-direction: column;
+        width: 90vw;
+    }
+
+    .roomRows .rowImg {
+        width: 100%;
+        height: 100%;
+    }
+
+    .firstColumn {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 1rem;
+        height: 6rem;
+    }
+
+    .firstColumn .title {
+        font-size: 1.1rem;
+    }
+
+    .firstColumn p {
+        text-align: center;
+    }
+
+
+    .firstColumn button {
+        width: 9rem;
+        margin-left: 1rem;
+    }
+
+    .secondColumn {
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        justify-content: center;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .secondColumn .button:first-child {
+        font-size: 13px;
+    }
+
+    .secondColumn .transparentButton {
+        font-size: 13px;
+    }
+
+    .secondColumn h3 {
+        font-size: 1.2rem;
+    }
+
+    .thirdColumn {
+        width: 100%;
+    }
+
+    .thirdColumn h3 {
+        gap: 5px;
+        font-size: 1;
+    }
+}
+
+@media (max-width:380px) and (min-width:0) {
+    .roomRows {
+        display: flex;
+        flex-direction: column;
+        width: 90vw;
+    }
+
+    .roomRows .rowImg {
+        width: 100%;
+        height: 100%;
+    }
+
+    .firstColumn {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 1rem;
+        height: 6rem;
+    }
+
+    .firstColumn .title {
+        font-size: 1.1rem;
+    }
+
+    .firstColumn p {
+        text-align: center;
+    }
+
+    .firstColumn h3 {
+        font-size: 1rem;
+    }
+
+    .firstColumn button {
+        width: 8rem;
+        margin-left: 1rem;
+        font-size: 14px;
+    }
+
+    .secondColumn {
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        justify-content: center;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .secondColumn .button:first-child {
+        font-size: 10px;
+    }
+
+    .secondColumn .transparentButton {
+        font-size: 10px;
+    }
+
+    .secondColumn h3 {
+        font-size: 1.2rem;
+    }
+
+    .thirdColumn {
+        width: 100%;
+    }
+
+    .thirdColumn h3 {
+        gap: 3px;
+        font-size: 1;
+    }
+
+    .thirdColumn .detailsButton {
+        font-size: 12px;
+        padding: .5rem .7rem;
+    }
+}

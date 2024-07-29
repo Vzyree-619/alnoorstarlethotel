@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+.facilities {
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.facilities h1 {
+    font-family: 'Playfair Display';
+    font-size: 2.5rem;
+}
+
+.facilities .facilitiesGrid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.facilitiesBox p {
+    font-weight: 600;
+}
+
+.facilitiesGrid .facilitiesBox {
+    border: 1px solid black;
+    /* padding: 1rem; */
+    width: 10rem;
+    height: 10rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+@media (max-width: 977px) and (min-width: 769px) {
+    .facilitiesGrid .facilitiesBox {
+        width: 7.5rem;
+        height: 7.5rem;
+    }
+
+    .facilities .facilitiesGrid {
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 768px) and (min-width: 383px) {
+    .facilities .facilitiesGrid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .facilitiesGrid .facilitiesBox:last-child {
+        margin-left: 100%;
+    }
+}
+
+@media (max-width: 382px) and (min-width: 0px) {
+    .facilities .facilitiesGrid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .facilitiesGrid .facilitiesBox:last-child {
+        margin-left: 100%;
+    }
+
+    .facilitiesGrid .facilitiesBox {
+        width: 9rem;
+        height: 7rem;
+    }
+}

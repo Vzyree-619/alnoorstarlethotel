@@ -1,0 +1,121 @@
+.contactForm {
+    width: 100%;
+    height: auto;
+    /* height: 100vh; */
+}
+
+.contactForm form {
+    /* width: 100%; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem 1.2rem;
+    width: 100%;
+    /* width: 50%; */
+    /* max-width: 600px; */
+}
+
+.contactForm form .inputBox {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.inputBox label {
+    font-weight: 500;
+}
+
+.inputBox input {
+    border-bottom: 1px solid black;
+    font-size: 13px;
+    background-color: transparent;
+    outline: none;
+    cursor: text;
+}
+
+.inputBox input::-webkit-outer-spin-button,
+.inputBox input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.contactForm .select {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+}
+
+.contactForm .select h2 {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.select .radioContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.radioBox span {
+    padding-left: 5px;
+}
+
+.contactForm .textarea {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.textarea label {
+    font-weight: 500;
+}
+
+.textarea textarea {
+    width: 100%;
+    resize: none;
+    background-color: transparent;
+    border: 1px solid black;
+    outline: none;
+    height: 35vh;
+    cursor: text;
+    padding: 13px;
+}
+
+.textarea textarea::placeholder {
+    color: black;
+}
+
+.textarea button {
+    align-self: flex-end;
+    border-radius: 7px;
+    background-color: black;
+    color: white;
+    padding: 1rem 2rem;
+    cursor: pointer;
+}
+
+.contactForm form .select {
+    grid-column: 1 / span 2;
+}
+
+.contactForm form .textarea {
+    grid-column: 1 / span 2;
+}
+
+@media (max-width: 870px) and (min-width: 768px) {
+    .select .radioContainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+}
+
+
+@media (max-width: 480px) and (min-width: 0) {
+    .contactForm form {
+        display: flex;
+        flex-direction: column;
+    }
+}

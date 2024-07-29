@@ -1,0 +1,151 @@
+.container {
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.offer .offerContainer {
+    padding: 1rem;
+    height: auto;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    border: 1px solid #000000;
+    gap: 1rem;
+}
+
+.offerGrid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: start;
+    gap: 2rem;
+    color: #484848;
+    font-weight: 700;
+}
+
+.offerContainer h3 {
+    color: #484848;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.offerGrid .offerItem {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    text-align: center;
+    gap: 5px;
+}
+
+.offerItem span {
+    font-size: 1rem;
+}
+
+.offerItem .offerIcon {
+    font-size: 1.5rem;
+}
+
+.safety .safetyContainer {
+    padding: 1rem;
+    height: auto;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    border: 1px solid #000000;
+    gap: 1rem;
+}
+
+.safetyGrid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 180px);
+    justify-items: start;
+    gap: 2rem;
+    color: #484848;
+    font-weight: 700;
+}
+
+.safetyContainer h3 {
+    color: #484848;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.safetyGrid .safetyItem {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 5px;
+}
+
+.safetyItem .safetyIcon {
+    font-size: 1.5rem;
+}
+
+@media (max-width: 480px) and (min-width: 393px) {
+    .safetyGrid {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 150px);
+        justify-items: start;
+        gap: 2rem;
+        color: #484848;
+        font-weight: 700;
+    }
+
+    .offerItem span {
+        font-size: 11px;
+        text-align: center;
+    }
+
+    .safetyItem span {
+        font-size: 11px;
+        /* text-align: center; */
+    }
+}
+
+@media (max-width: 392px) and (min-width: 0px) {
+    .offerGrid {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 110px);
+        justify-items: start;
+        gap: 1rem;
+        color: #484848;
+        font-weight: 700;
+        position: relative;
+        left: 1rem;
+    }
+
+    .safetyGrid {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: start;
+        gap: 1rem;
+        color: #484848;
+        font-weight: 700;
+    }
+
+    .offerItem span {
+        font-size: 11px;
+        text-align: center;
+    }
+
+    .safetyItem span {
+        font-size: 11px;
+        /* text-align: center; */
+    }
+}
