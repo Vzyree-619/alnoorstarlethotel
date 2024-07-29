@@ -1,7 +1,6 @@
 import Login from './login/page';
 import DashHeader from './DashHeader/DashHeader';
-import DashboardManagement from './Management/Management';
-import styles from './dashboard.module.css';
+import styles from './admin.module.css';
 
 export default function Dashboard() {
   return (

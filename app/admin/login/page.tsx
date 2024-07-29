@@ -13,6 +13,7 @@ export default function Login() {
   const togglePasswordVisibility = () => {
     setShowPassword(!showPassword);
   };
+
   return (
     <section className={styles.login}>
       <div className={styles.loginContainer}>
@@ -29,18 +30,13 @@ export default function Login() {
                 type={showPassword ? 'text' : 'password'}
                 placeholder='Enter your password'
               />
-              <span
-                onClick={togglePasswordVisibility}
-                // style={{
-                //   position: 'absolute',
-                //   right: '10px',
-                //   cursor: 'pointer',
-                // }}
-              >
+              <span onClick={togglePasswordVisibility}>
                 {showPassword ? <AiOutlineEyeInvisible /> : <AiOutlineEye />}
               </span>
             </div>
-            <button className={styles.signInButton}>Sign In</button>
+            <Link href='/admin/dashboard' className={styles.signInButton}>
+              Sign In
+            </Link>
           </form>
         </div>
       </div>
