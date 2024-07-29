@@ -3,52 +3,52 @@ import BgImage from '../Components/BgImage/BgImage';
 import Header from '../Components/Header/Header';
 import styles from './gallery.module.css';
 
-const galleryImage = [
-  {
-    image: '/gallery/img9.png',
-    hover: 'Executive Suite',
-  },
-  {
-    image: '/gallery/img8.png',
-    hover: 'Executive Suite',
-  },
-  {
-    image: '/gallery/img2.png',
-    hover: 'Executive Suite',
-  },
-  {
-    image: '/gallery/img3.png',
-    hover: 'Executive Suite',
-  },
-  {
-    image: '/gallery/img5.png',
-    hover: 'Executive Suite',
-  },
-  {
-    image: '/gallery/img8.png',
-    hover: 'Executive Suite',
-  },
-  {
-    image: '/gallery/img1.png',
-    hover: 'Executive Suite',
-  },
-  {
-    image: '/gallery/img10.png',
-    hover: 'Executive Suite',
-  },
-  {
-    image: '/gallery/img8.png',
-    hover: 'Executive Suite',
-  },
-  {
-    image: '/gallery/img4.png',
-    hover: 'Executive Suite',
-  },
-  {
-    image: '/gallery/img4.png',
-    hover: 'Executive Suite',
-  },
-];
+// const galleryImage = [
+//   {
+//     image: '/gallery/img9.png',
+//     hover: 'Executive Suite',
+//   },
+//   {
+//     image: '/gallery/img8.png',
+//     hover: 'Executive Suite',
+//   },
+//   {
+//     image: '/gallery/img2.png',
+//     hover: 'Executive Suite',
+//   },
+//   {
+//     image: '/gallery/img3.png',
+//     hover: 'Executive Suite',
+//   },
+//   {
+//     image: '/gallery/img5.png',
+//     hover: 'Executive Suite',
+//   },
+//   {
+//     image: '/gallery/img8.png',
+//     hover: 'Executive Suite',
+//   },
+//   {
+//     image: '/gallery/img1.png',
+//     hover: 'Executive Suite',
+//   },
+//   {
+//     image: '/gallery/img10.png',
+//     hover: 'Executive Suite',
+//   },
+//   {
+//     image: '/gallery/img8.png',
+//     hover: 'Executive Suite',
+//   },
+//   {
+//     image: '/gallery/img4.png',
+//     hover: 'Executive Suite',
+//   },
+//   {
+//     image: '/gallery/img4.png',
+//     hover: 'Executive Suite',
+//   },
+// ];
 
 export default function Gallery() {
   return (
@@ -61,16 +61,88 @@ export default function Gallery() {
           our rooms, dining, and surroundings.
         </span>
         <div className={styles.photoContainer}>
-          {galleryImage.map((image, index) => (
-            <Image
-              className={styles.galleryImage}
-              src={image.image}
-              key={index}
-              width={200}
-              height={200}
-              alt='Gallery Images'
-            />
-          ))}
+          <div className={styles.photoColumn}>
+            <h1>Garden</h1>
+            <div className={styles.photoGrid}>
+              <Image
+                src={'/gallery/img9.png'}
+                width={600}
+                height={600}
+                alt='Gallery Image'
+              />
+              <Image
+                src={'/gallery/img9.png'}
+                width={600}
+                height={600}
+                alt='Gallery Image'
+              />
+              <Image
+                src={'/gallery/img9.png'}
+                width={600}
+                height={600}
+                alt='Gallery Image'
+              />
+              <Image
+                src={'/gallery/img9.png'}
+                width={600}
+                height={600}
+                alt='Gallery Image'
+              />
+              <Image
+                src={'/gallery/img9.png'}
+                width={600}
+                height={600}
+                alt='Gallery Image'
+              />
+              <Image
+                src={'/gallery/img9.png'}
+                width={600}
+                height={600}
+                alt='Gallery Image'
+              />
+            </div>
+          </div>
+          <div className={styles.photoColumn}>
+            <h1>Dinning</h1>
+            <div className={styles.photoGrid}>
+              <Image
+                src={'/gallery/img9.png'}
+                width={600}
+                height={600}
+                alt='Gallery Image'
+              />
+              <Image
+                src={'/gallery/img9.png'}
+                width={600}
+                height={600}
+                alt='Gallery Image'
+              />
+              <Image
+                src={'/gallery/img9.png'}
+                width={600}
+                height={600}
+                alt='Gallery Image'
+              />
+              <Image
+                src={'/gallery/img9.png'}
+                width={600}
+                height={600}
+                alt='Gallery Image'
+              />
+              <Image
+                src={'/gallery/img9.png'}
+                width={600}
+                height={600}
+                alt='Gallery Image'
+              />
+              <Image
+                src={'/gallery/img9.png'}
+                width={600}
+                height={600}
+                alt='Gallery Image'
+              />
+            </div>
+          </div>
         </div>
       </div>
     </section>

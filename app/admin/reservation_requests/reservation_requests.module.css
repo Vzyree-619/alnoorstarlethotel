@@ -28,37 +28,29 @@
     text-align: center;
 }
 
-.dashboard .dashboardGrid {
-    width: 100%;
-    height: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 1rem;
-    padding-bottom: 10px;
-}
-
-.dashboardGrid .linkBox {
-    width: 12rem;
-    height: 12rem;
-    border: 3px solid #00329F;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 9px;
-    font-size: 1.4rem;
-    text-align: center;
-    font-weight: 700;
-    transition: .3s;
-}
-
-.dashboardGrid .linkBox:hover {
-    background-color: #00329F;
-    color: white;
-}
-
 .dashboardContainer h1 {
     margin-bottom: 1rem;
     font-size: 2rem;
     font-weight: 700;
+}
+
+.request {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #F5F5F5;
+}
+
+.request .requestTitle {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    /* gap: 1rem;/ */
+}
+
+.request .table {
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    /* gap: 1rem; */
 }

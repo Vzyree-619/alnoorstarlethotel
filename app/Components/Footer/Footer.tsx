@@ -20,7 +20,6 @@ export default function Footer() {
             width={150}
             alt='Logo'
           />
-          {/* <h3 className={styles.titleLogo}>AL NOOR STARLET HOTEL</h3> */}
           <p className={styles.footerPara}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.{' '}
