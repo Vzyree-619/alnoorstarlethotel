@@ -1,9 +1,9 @@
 import Link from 'next/link';
-import DashSideBar from '../DashSideBar/DashSideBar';
 import DashHeader from '../DashHeader/DashHeader';
-import styles from './dashboard.module.css';
+import DashSideBar from '../DashSideBar/DashSideBar';
+import styles from './reservation_requests.module.css';
 
-export default function DashboardManagement() {
+export default function DashReservation() {
   return (
     <section className={styles.dashboard}>
       <DashHeader />
@@ -11,7 +11,7 @@ export default function DashboardManagement() {
         <div className={styles.dashboardRow}>
           <DashSideBar />
           <div className={styles.dashboardColumn}>
-            <h1>Room Management</h1>
+            <h1>Reservation Requests</h1>
             <div className={styles.dashboardGrid}>
               <Link href={'/'} className={styles.linkBox}>
                 Family Suite

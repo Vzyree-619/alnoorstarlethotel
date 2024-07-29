@@ -1,14 +1,16 @@
-import Link from 'next/link';
 import styles from './dashSideBar.module.css';
+import NavLink from '../NavLink/NavLink';
 
 export default function DashSideBar() {
   return (
     <div className={styles.dashSideBar}>
       <nav>
-        <Link href={'/'}>Rooms</Link>
-        <Link href={'/dashboard/dashReservatoin'}>Reservation Requests</Link>
-        <Link href={'/'}>Reservation Dates</Link>
-        <Link href={'/'}>Messages</Link>
+        <NavLink href={'/admin/dashboard'}>Rooms</NavLink>
+        <NavLink href={'/admin/reservation_requests'}>
+          Reservation Requests
+        </NavLink>
+        <NavLink href={'/reservation_dates'}>Reservation Dates</NavLink>
+        <NavLink href={'/messages'}>Messages</NavLink>
       </nav>
       <button className={styles.logOut}>LogOut</button>
     </div>
