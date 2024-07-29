@@ -35,7 +35,6 @@ export default function Header({ bgColor }: HeaderProps) {
         <NavLink href={'/gallery'}>Gallery</NavLink>
         <NavLink href={'/room'}>Rooms</NavLink>
         <NavLink href={'/contact'}>Contact</NavLink>
-        <NavLink href={'/api/login'}>Login</NavLink>
         <Link href={'/'} className={styles.button}>
           Book Now
         </Link>
