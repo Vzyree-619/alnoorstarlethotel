@@ -3,7 +3,12 @@ import Header from '../Components/Header/Header';
 import styles from './contact.module.css';
 import { MdLocationPin } from 'react-icons/md';
 import { IoMailSharp } from 'react-icons/io5';
-import { FaFacebookF, FaInstagram, FaXTwitter } from 'react-icons/fa6';
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaWhatsapp,
+  FaXTwitter,
+} from 'react-icons/fa6';
 import ContactForm from '../Components/contactForm/contactForm';
 import Map from '../Components/map/Map';
 
@@ -42,7 +47,8 @@ export default function Contact() {
               </div>
               <div className={styles.contactIcon}>
                 <div className={styles.icon}>
-                  <FaXTwitter />
+                  {/* <FaXTwitter /> */}
+                  <FaWhatsapp />
                 </div>
                 <div className={styles.icon}>
                   <FaInstagram />

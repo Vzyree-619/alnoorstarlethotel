@@ -27,7 +27,9 @@ export default function DashHeader() {
       </Link>
       <div className={styles.profileName}>
         <span>Admin</span>
-        <div className={styles.avatar}></div>
+        <div className={styles.avatar}>
+          <Image src={'/avatar.png'} width={50} height={50} alt='Avatar' />
+        </div>
       </div>
       <button
         className={styles.menuButton}

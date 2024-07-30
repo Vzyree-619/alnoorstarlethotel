@@ -106,36 +106,42 @@ export default function Gallery() {
             <h1>Dinning</h1>
             <div className={styles.photoGrid}>
               <Image
+              className={styles.galleryImg}
                 src={'/gallery/img9.png'}
                 width={600}
                 height={600}
                 alt='Gallery Image'
               />
               <Image
+              className={styles.galleryImg}
                 src={'/gallery/img9.png'}
                 width={600}
                 height={600}
                 alt='Gallery Image'
               />
               <Image
+              className={styles.galleryImg}
                 src={'/gallery/img9.png'}
                 width={600}
                 height={600}
                 alt='Gallery Image'
               />
               <Image
+              className={styles.galleryImg}
                 src={'/gallery/img9.png'}
                 width={600}
                 height={600}
                 alt='Gallery Image'
               />
               <Image
+              className={styles.galleryImg}
                 src={'/gallery/img9.png'}
                 width={600}
                 height={600}
                 alt='Gallery Image'
               />
               <Image
+              className={styles.galleryImg}
                 src={'/gallery/img9.png'}
                 width={600}
                 height={600}

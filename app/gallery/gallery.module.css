@@ -52,3 +52,18 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
 }
+
+@media (max-width: 769px) and (min-width: 481px) {
+    .photoColumn .photoGrid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) and (min-width: 0) {
+    .photoColumn .photoGrid {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
