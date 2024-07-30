@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import Header from '../Components/Header/Header';
-import styles from './bookinng.module.css';
+import styles from './booking.module.css';
 import Facilities from '../Components/Facilities/Facilities';
 import AccordionPage from '../Components/Accordian/Accordian';
 import React, { useState } from 'react';
@@ -137,7 +137,6 @@ export default function Booking() {
             <button className={styles.bookNow}>Book Now</button>
           </div>
         </form>
-        
       </div>
     </section>
   );

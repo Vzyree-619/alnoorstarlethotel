@@ -103,45 +103,113 @@ export default function Gallery() {
             </div>
           </div>
           <div className={styles.photoColumn}>
+            <h1>Room</h1>
+            <div className={styles.photoGrid}>
+              <Image
+                className={styles.galleryImg}
+                src={'/gallery/img9.png'}
+                width={600}
+                height={600}
+                alt='Gallery Image'
+              />
+              <Image
+                className={styles.galleryImg}
+                src={'/gallery/img9.png'}
+                width={600}
+                height={600}
+                alt='Gallery Image'
+              />
+              <Image
+                className={styles.galleryImg}
+                src={'/gallery/img9.png'}
+                width={600}
+                height={600}
+                alt='Gallery Image'
+              />
+              <Image
+                className={styles.galleryImg}
+                src={'/gallery/img9.png'}
+                width={600}
+                height={600}
+                alt='Gallery Image'
+              />
+              <Image
+                className={styles.galleryImg}
+                src={'/gallery/img9.png'}
+                width={600}
+                height={600}
+                alt='Gallery Image'
+              />
+              <Image
+                className={styles.galleryImg}
+                src={'/gallery/img9.png'}
+                width={600}
+                height={600}
+                alt='Gallery Image'
+              />
+              <Image
+                className={styles.galleryImg}
+                src={'/gallery/img9.png'}
+                width={600}
+                height={600}
+                alt='Gallery Image'
+              />
+              <Image
+                className={styles.galleryImg}
+                src={'/gallery/img9.png'}
+                width={600}
+                height={600}
+                alt='Gallery Image'
+              />
+              <Image
+                className={styles.galleryImg}
+                src={'/gallery/img9.png'}
+                width={600}
+                height={600}
+                alt='Gallery Image'
+              />
+            </div>
+          </div>
+          <div className={styles.photoColumn}>
             <h1>Dinning</h1>
             <div className={styles.photoGrid}>
               <Image
-              className={styles.galleryImg}
+                className={styles.galleryImg}
                 src={'/gallery/img9.png'}
                 width={600}
                 height={600}
                 alt='Gallery Image'
               />
               <Image
-              className={styles.galleryImg}
+                className={styles.galleryImg}
                 src={'/gallery/img9.png'}
                 width={600}
                 height={600}
                 alt='Gallery Image'
               />
               <Image
-              className={styles.galleryImg}
+                className={styles.galleryImg}
                 src={'/gallery/img9.png'}
                 width={600}
                 height={600}
                 alt='Gallery Image'
               />
               <Image
-              className={styles.galleryImg}
+                className={styles.galleryImg}
                 src={'/gallery/img9.png'}
                 width={600}
                 height={600}
                 alt='Gallery Image'
               />
               <Image
-              className={styles.galleryImg}
+                className={styles.galleryImg}
                 src={'/gallery/img9.png'}
                 width={600}
                 height={600}
                 alt='Gallery Image'
               />
               <Image
-              className={styles.galleryImg}
+                className={styles.galleryImg}
                 src={'/gallery/img9.png'}
                 width={600}
                 height={600}
