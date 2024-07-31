@@ -1,6 +1,6 @@
 import SubmitBooking from './bookingsubmit';
 import Image from 'next/image';
-import Header from '@/app/Components/Header/Header'
+import Header from '@/app/Components/Header/Header';
 import styles from '@/app/booking/booking.module.css';
 import Facilities from '@/app/Components/Facilities/Facilities';
 import AccordionPage from '@/app/Components/Accordian/Accordian';
@@ -21,12 +21,18 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@/components/ui/select';
-import { useFormState } from "react-dom";
-export default function bookingForm({action}){
-    const [state, formAction] = useFormState(action, {});
+import { useFormState } from 'react-dom';
+import {
+  FaFacebook,
+  FaPhone,
+  FaSquareFacebook,
+  FaWhatsapp,
+} from 'react-icons/fa6';
+import Link from 'next/link';
+export default function bookingForm({ action }) {
+  const [state, formAction] = useFormState(action, {});
 
-
-const [checkInDate, setCheckInDate] = useState<Date | null>(null);
+  const [checkInDate, setCheckInDate] = useState<Date | null>(null);
   const [checkOutDate, setCheckOutDate] = useState<Date | null>(null);
   return (
     <section className={styles.booking}>
@@ -34,14 +40,14 @@ const [checkInDate, setCheckInDate] = useState<Date | null>(null);
       <div className={styles.bookingContainer}>
         <h1>Booking</h1>
         <span className={styles.span}>Enter Your Information</span>
-        <form action={formAction} className={styles.form}>
+        <form action='' className={styles.form}>
           <div>
-            <label  htmlFor='firstName'>First Name:</label>
-            <input name='firstName' type='text' />
+            <label htmlFor='firstName'>First Name:</label>
+            <input type='text' />
           </div>
           <div>
             <label htmlFor='lastName'>Last Name:</label>
-            <input name='lastName' type='text' />
+            <input type='text' />
           </div>
           <div>
             <label htmlFor=''>Check In:</label>
@@ -107,39 +113,54 @@ const [checkInDate, setCheckInDate] = useState<Date | null>(null);
           </div>
           <div>
             <label htmlFor=''>Whatsapp No:</label>
-            <input type='number' name='Number' />
+            <input type='number' />
           </div>
           <div>
             <label htmlFor=''>No of Guests:</label>
-            <input type='number' name='guests' />
+            <input type='number' />
           </div>
           <div>
             <label htmlFor=''>Email Address:</label>
-            <input type='email' name='emailAdd' />
+            <input type='email' />
           </div>
           <div>
             <label htmlFor=''>Guest:</label>
-            <Select name='roomtype'>
+            <Select>
               <SelectTrigger className={styles.guest}>
                 <SelectValue placeholder='Room Type' />
               </SelectTrigger>
-              <SelectContent >
-                <SelectItem value='Family Suite'>Family Suite</SelectItem>
-                <SelectItem value='Executive Suite'>Executive Suite</SelectItem>
-                <SelectItem value='Executive Lite'>Executive Lite</SelectItem>
-                <SelectItem value='Luxury Suite'>Luxury Suite</SelectItem>
+              <SelectContent>
+                <SelectItem value='1'>Family Suite</SelectItem>
+                <SelectItem value='2'>Executive Suite</SelectItem>
+                <SelectItem value='3'>Executive Lite</SelectItem>
+                <SelectItem value='4'>Luxury Suite</SelectItem>
               </SelectContent>
             </Select>
           </div>
           <div className={styles.message}>
             <label htmlFor=''>Any message or specific request!</label>
-            <textarea  name='description' id=''></textarea>
+            <textarea name='' id=''></textarea>
           </div>
-          <div>
-            <SubmitBooking/>
+          <div className={styles.buttonDiv}>
+            <button className={styles.bookNow}>Book Now</button>
+          </div>
+          <div className={styles.iconDiv}>
+            {/* <button className={styles.bookNow}>Book Now</button> */}
+            <Link href={'https://wa.me/03334441547'}>
+              <FaWhatsapp />
+            </Link>
+            <Link
+              href={'https://www.facebook.com/alnoorguesthouseskardu'}
+              target='blank'
+            >
+              <FaSquareFacebook />
+            </Link>
+            <Link href={''}>
+              <FaPhone />
+            </Link>
           </div>
         </form>
       </div>
     </section>
-  )
+  );
 }
