@@ -56,7 +56,7 @@ export default function ContactForm({action}) {
             <label className='' htmlFor=''>Message</label>
             <textarea
             required
-              name='Message'
+              name='description'
               id=''
               placeholder='Write your message...'
             ></textarea>

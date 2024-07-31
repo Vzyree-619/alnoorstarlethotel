@@ -8,10 +8,9 @@ function initDb() {
       id INTEGER PRIMARY KEY, 
       firstName TEXT NOT NULL, 
       secondName TEXT NOT NULL, 
-      options TEXT,
       emailAddress TEXT, 
       contactNumber TEXT NOT NULL,
-      message1 TEXT  NULL,
+      description TEXT NULL,
       user_id INTEGER
      
     
