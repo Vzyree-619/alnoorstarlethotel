@@ -9,41 +9,11 @@ interface messageProp {
   subject: String;
 }
 
-const message: messageProp[] = [
-  {
-    name: 'Ahmad Ali',
-    subject: 'General Inquiry',
-  },
-  {
-    name: 'Ahmad Ali',
-    subject: 'General Inquiry',
-  },
-  {
-    name: 'Ahmad Ali',
-    subject: 'General Inquiry',
-  },
-  {
-    name: 'Ahmad Ali',
-    subject: 'General Inquiry',
-  },
-  {
-    name: 'Ahmad Ali',
-    subject: 'General Inquiry',
-  },
-  {
-    name: 'Ahmad Ali',
-    subject: 'General Inquiry',
-  },
-];
-
- 
-
- export default async function ReservationDate() {
-  const data1 =  await getMessages()
- console.log(data1)
+export default async function ReservationDate() {
+  const data1 = await getMessages();
+  console.log(data1);
   return (
     <section className={styles.message}>
-    
       <DashHeader />
       <div className={styles.messageContainer}>
         <DashSideBar />{' '}
@@ -59,10 +29,8 @@ const message: messageProp[] = [
               <div key={index} className={`${styles.title} ${styles.content}`}>
                 <span>{`${content.firstName} ${content.secondName}`}</span>
                 <span>{content.description}</span>
-                <div>
-                
-                  <button>See Message</button>
-                </div>
+                <span>{content.email}</span>
+                <div>{/* <button>See Message</button> */}</div>
               </div>
             ))}
             {/* <div className={styles.name}></div> */}

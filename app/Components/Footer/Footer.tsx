@@ -5,6 +5,7 @@ import {
   FaInstagram,
   FaLinkedinIn,
   FaSquareFacebook,
+  FaWhatsapp,
   FaXTwitter,
 } from 'react-icons/fa6';
 
@@ -12,7 +13,7 @@ export default function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={styles.footerContainer}>
-        <div className={styles.footerContent}>
+        <div className={`${styles.footerContent} ${styles.footerText}`}>
           <Image
             className={styles.logo}
             src={'/footerLogo1.png'}
@@ -21,21 +22,22 @@ export default function Footer() {
             alt='Logo'
           />
           <p className={styles.footerPara}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.{' '}
+            Al Noor Starlet Hotel offers luxurious accommodations and
+            exceptional hospitality in a serene environment, perfect for a
+            relaxing getaway.
           </p>
         </div>
         <div className={`${styles.footerContent} ${styles.footerList}`}>
           <h3>Hotel</h3>
-          <Link href={'/'}>About Us</Link>
-          <Link href={'/'}>Legal Information</Link>
-          <Link href={'/'}>Contact Us</Link>
-          <Link href={'/'}>Gallery</Link>
+          <Link href={'/contact'}>About Us</Link>
+          <Link href={'/contact'}>Legal Information</Link>
+          <Link href={'/contact'}>Contact Us</Link>
+          <Link href={'/gallery'}>Gallery</Link>
         </div>
         <div className={`${styles.footerContent} ${styles.footerList}`}>
           <h3>Help Center</h3>
-          <Link href={'/'}>Rooms</Link>
-          <Link href={'/'}>Location Map</Link>
+          <Link href={'/room'}>Rooms</Link>
+          <Link href={'/contact'}>Location Map</Link>
           <Link href={'/'}>Why Us?</Link>
           <Link href={'/'}>FAQs</Link>
         </div>
@@ -53,8 +55,8 @@ export default function Footer() {
             >
               <FaSquareFacebook />
             </Link>
-            <Link href={'/'}>
-              <FaXTwitter />
+            <Link href={'https://wa.me/03334441547'}>
+              <FaWhatsapp />
             </Link>
             <Link
               href={

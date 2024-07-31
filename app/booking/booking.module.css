@@ -22,6 +22,7 @@
 .bookingContainer .span {
     color: #FF0A0A;
     font-weight: 400;
+    margin-bottom: 7px;
 }
 
 .bookingContainer .form {
@@ -32,27 +33,29 @@
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     align-items: center;
-    width: 60vw;
-    gap: 1rem;
+    width: 44rem;
+    gap: 1rem 0rem;
 }
 
 .form div {
     display: flex;
-    /* justify-content: space-between; */
     align-items: center;
     width: 100%;
-    gap: 1rem;
+    gap: 8px;
 }
 
 .form div input {
     border-bottom: 1px solid black;
-    /* font-weight: 600; */
     outline: none;
     top: -4px;
     background-color: transparent;
     position: relative;
     /* margin-left: 4px; */
     width: 12rem;
+}
+
+.form div .input {
+    width: 13rem;
 }
 
 .form div label {
@@ -71,7 +74,6 @@
     justify-content: center;
     grid-column: 1 / span 2;
     align-items: start;
-
 }
 
 .message textarea {
@@ -79,15 +81,113 @@
     border-radius: 5px;
     resize: none;
     height: 15vh;
+    outline: none;
     border: 1px solid black;
+}
+
+.form .buttonDiv {
+    grid-column: 1 / span 2;
+    justify-content: center;
 }
 
 .form .bookNow {
     background-color: #FF0A0A;
     grid-column: 1 / span 2;
-    width: 50%;
+    width: 25%;
     height: 2.5rem;
     font-weight: 700;
     color: white;
     border-radius: 10px;
+}
+
+.form .iconDiv {
+    grid-column: 1 / span 2;
+    justify-content: center;
+    background-color: #004AC3;
+    width: 40%;
+    height: 2.5rem;
+    border-radius: 10px;
+}
+
+.iconDiv svg {
+    margin-right: 2rem;
+    color: white;
+    font-size: 1.3rem;
+}
+
+
+@media (max-width: 775px) and (min-width: 575px) {
+    .bookingContainer .form {
+        width: 35rem;
+    }
+
+
+    .form div {
+        width: 100%;
+    }
+
+    .form div input {
+        width: 100%;
+    }
+
+    .form div .input {
+        width: 100%;
+    }
+
+    .form div label {
+        /* font-weight: 600; */
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 574px) and (min-width: 481px) {
+    .bookingContainer .form {
+        width: 90vw;
+    }
+
+    .form div {
+        width: 100%;
+    }
+
+    .form div .input {
+        width: 100%;
+    }
+
+    .form div input {
+        width: 100%;
+    }
+
+    .form div label {
+        /* font-weight: 600; */
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) and (min-width: 0px) {
+    .bookingContainer .form {
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form div {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        align-items: start;
+    }
+
+    .form div .input {
+        width: 100%;
+    }
+
+    .form div input {
+        width: 100%;
+    }
+
+    .form div label {
+        /* font-weight: 600; */
+        font-size: 14px;
+    }
 }

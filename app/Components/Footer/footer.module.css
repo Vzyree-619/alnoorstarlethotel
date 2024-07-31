@@ -18,6 +18,12 @@
     gap: 2rem;
 }
 
+.footerText {
+    display: flex;
+    flex-direction: column;
+    gap: 0rem;
+}
+
 .footerContent {
     display: flex;
     flex-direction: column;
@@ -33,6 +39,7 @@
 
 .footerContent .footerPara {
     color: #9A9A9A;
+    margin-top: -1rem;
 }
 
 .footerList {

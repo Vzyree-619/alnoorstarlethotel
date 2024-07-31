@@ -22,6 +22,13 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@/components/ui/select';
+import {
+  FaFacebook,
+  FaPhone,
+  FaSquareFacebook,
+  FaWhatsapp,
+} from 'react-icons/fa6';
+import Link from 'next/link';
 
 export default function Booking() {
   const [checkInDate, setCheckInDate] = useState<Date | null>(null);
@@ -133,8 +140,23 @@ export default function Booking() {
             <label htmlFor=''>Any message or specific request!</label>
             <textarea name='' id=''></textarea>
           </div>
-          <div>
+          <div className={styles.buttonDiv}>
             <button className={styles.bookNow}>Book Now</button>
+          </div>
+          <div className={styles.iconDiv}>
+            {/* <button className={styles.bookNow}>Book Now</button> */}
+            <Link href={'https://wa.me/03334441547'}>
+              <FaWhatsapp />
+            </Link>
+            <Link
+              href={'https://www.facebook.com/alnoorguesthouseskardu'}
+              target='blank'
+            >
+              <FaSquareFacebook />
+            </Link>
+            <Link href={''}>
+              <FaPhone />
+            </Link>
           </div>
         </form>
       </div>
