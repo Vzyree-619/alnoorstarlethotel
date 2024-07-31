@@ -1,4 +1,5 @@
 import { Link } from 'lucide-react';
+import { getMessages } from '@/lib/sendMessage';
 import DashHeader from '../DashHeader/DashHeader';
 import DashSideBar from '../DashSideBar/DashSideBar';
 import styles from './message.module.css';
@@ -35,9 +36,14 @@ const message: messageProp[] = [
   },
 ];
 
-export default function ReservationDate() {
+ 
+
+ export default async function ReservationDate() {
+  const data1 =  await getMessages()
+ console.log(data1)
   return (
     <section className={styles.message}>
+    
       <DashHeader />
       <div className={styles.messageContainer}>
         <DashSideBar />{' '}
@@ -49,11 +55,12 @@ export default function ReservationDate() {
               <span>Subject</span>
             </div>
 
-            {message.map((content, index) => (
+            {data1.map((content, index) => (
               <div key={index} className={`${styles.title} ${styles.content}`}>
-                <span>{content.name}</span>
-                <span>{content.subject}</span>
+                <span>{`${content.firstName} ${content.secondName}`}</span>
+                <span>{content.message1}</span>
                 <div>
+                
                   <button>See Message</button>
                 </div>
               </div>
