@@ -11,8 +11,8 @@ export default async function contactSubmission(prevState,formData:any){
     const options = formData.get('option')
     const emailAddress = formData.get('email')
     const contactNumber = formData.get('Number')
-    const Message = formData.get('Message')
-    console.log(firstName,secondName,options,emailAddress,contactNumber,Message)
+    const description = formData.get('description')
+    console.log(firstName,secondName,emailAddress,contactNumber,description)
 
    
     let errors = [];
@@ -30,7 +30,7 @@ export default async function contactSubmission(prevState,formData:any){
     if (!emailAddress || emailAddress.trim().length === 0) {
       errors.push('email address is required.');
     }
-    if (!Message || Message.trim().length === 0) {
+    if (!description || description.trim().length === 0) {
       errors.push('Message is required is required.');
     }
   
@@ -43,10 +43,9 @@ export default async function contactSubmission(prevState,formData:any){
     await createMessage({
         firstName,
         secondName,
-        options,
         emailAddress,
         contactNumber,
-        Message,
+        description,
         User_id: 1
 
     })
