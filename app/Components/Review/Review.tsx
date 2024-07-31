@@ -1,6 +1,7 @@
 import { FaStar } from 'react-icons/fa6';
 import styles from './review.module.css';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Review() {
   return (
@@ -49,49 +50,60 @@ export default function Review() {
           <div className={styles.box3Container}>
             <div className={styles.item}>
               <div className={styles.itemProfile}>
-                <div className={styles.radiusImg}></div>
+                <div className={styles.radiusImg}>
+                  <Image
+                    src={'/reviewImg1.png'}
+                    width={50}
+                    height={50}
+                    alt='Image'
+                  />
+                </div>
                 <div className={styles.text}>
-                  <h2>John Doberman</h2>
-                  <span>Mar 12 2020</span>
+                  <h2>Adnan Shafiq</h2>
+                </div>
+              </div>
+              <p>Above Average stay </p>
+            </div>
+            <div className={styles.item}>
+              <div className={styles.itemProfile}>
+                <div className={styles.radiusImg}>
+                  <Image
+                    src={'/reviewImg2.png'}
+                    width={50}
+                    height={50}
+                    alt='Image'
+                  />
+                </div>
+                <div className={styles.text}>
+                  <h2>Mohsin Azam</h2>
+                </div>
+              </div>
+              <p>Best in Town.</p>
+            </div>
+            <div className={styles.item}>
+              <div className={styles.itemProfile}>
+                <div className={styles.radiusImg}>
+                  <Image
+                    src={'/reviewImg3.png'}
+                    width={50}
+                    height={50}
+                    alt='Image'
+                  />
+                </div>
+                <div className={styles.text}>
+                  <h2>Mohid Frost</h2>
                 </div>
               </div>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                One of the best hotels you can stay in Skardu. Best Staff
+                services, awesome view!
               </p>
             </div>
             <div className={styles.item}>
               <div className={styles.itemProfile}>
                 <div className={styles.radiusImg}></div>
                 <div className={styles.text}>
-                  <h2>John Doberman</h2>
-                  <span>Mar 12 2020</span>
-                </div>
-              </div>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-            </div>
-            <div className={styles.item}>
-              <div className={styles.itemProfile}>
-                <div className={styles.radiusImg}></div>
-                <div className={styles.text}>
-                  <h2>John Doberman</h2>
-                  <span>Mar 12 2020</span>
-                </div>
-              </div>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-            </div>
-            <div className={styles.item}>
-              <div className={styles.itemProfile}>
-                <div className={styles.radiusImg}></div>
-                <div className={styles.text}>
-                  <h2>John Doberman</h2>
-                  <span>Mar 12 2020</span>
+                  <h2>Fida Ali Vzyree</h2>
                 </div>
               </div>
               <p>
@@ -102,7 +114,15 @@ export default function Review() {
           </div>
         </div>
         <div className={styles.reviewBox4}>
-          <button>Show All Reviews</button>
+          <Link
+            href={
+              'https://www.google.com/search?q=al+noor+starlet+hotel+skardu&rlz=1C1UEAD_en-GBPK1072PK1072&oq=al+noor+starlet+hotel+skardu&gs_lcrp=EgZjaHJvbWUqDAgAECMYJxiABBiKBTIMCAAQIxgnGIAEGIoFMhMIARAuGK8BGMcBGIAEGJgFGJkFMgYIAhAjGCcyBwgDEAAYgAQyBwgEEAAYgAQyCggFEAAYgAQYogQyCggGEAAYgAQYogQyCggHEAAYgAQYogQyCggIEAAYgAQYogQyCggJEAAYgAQYogTSAQg1MjI3ajBqMagCALACAA&sourceid=chrome&ie=UTF-8#lrd=0x38e465d4c9dc060f:0x64dcff5826cd3e15,1,,,,'
+            }
+            className={styles.link}
+            target='blank'
+          >
+            Show All Reviews
+          </Link>
         </div>
       </div>
     </section>
