@@ -1,6 +1,7 @@
 import DashHeader from '../DashHeader/DashHeader';
 import DashSideBar from '../DashSideBar/DashSideBar';
 import styles from './reservation_requests.module.css';
+import { getBookings } from '@/lib/sendMessage';
 
 interface MessageProp {
   name: string;
@@ -48,7 +49,8 @@ const messages: MessageProp[] = [
   },
 ];
 
-export default function Message() {
+export default async function Message() {
+  let bookings = await getBookings()
   return (
     <section className={styles.message}>
       <DashHeader />
@@ -65,13 +67,13 @@ export default function Message() {
               <span>Details</span>
             </div>
             <div className={styles.contentBox}>
-              {messages.map((content, index) => (
+              {bookings.map((content, index) => (
                 <div
                   key={index}
                   className={`${styles.title} ${styles.content}`}
                 >
-                  <span>{content.name}</span>
-                  <span>{content.roomType}</span>
+                  <span>{content.FirstName}</span>
+                  <span>{content.SecondName}</span>
                   <span>{content.guests}</span>
                   <span>{content.room}</span>
                   <div>
