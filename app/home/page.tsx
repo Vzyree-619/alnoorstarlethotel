@@ -22,6 +22,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@/components/ui/select';
+import Footer from '../Components/Footer/Footer';
 
 export default function Home() {
   const [checkInDate, setCheckInDate] = useState<Date | null>(null);
@@ -201,6 +202,7 @@ export default function Home() {
       </section>
       <AccordionPage />
       <Facilities />
+      <Footer />
     </main>
   );
 }

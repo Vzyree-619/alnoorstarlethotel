@@ -1,44 +1,97 @@
-.dashboard {
+.message {
     width: 100%;
     height: auto;
 }
 
-.dashboard .dashboardContainer {
+.message .messageContainer {
     width: 100%;
     height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    padding: 1.2px;
-}
-
-.dashboardContainer .dashboardRow {
-    width: 70%;
-    height: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 5rem;
+    justify-content: space-evenly;
+    align-items: start;
+    /* gap: 1rem; */
+    padding: 1rem;
 }
 
-.dashboardContainer .dashboardColumn {
-    text-align: center;
-}
 
-.dashboardContainer h1 {
+.messageContainer h1 {
     margin-bottom: 1rem;
     font-size: 2rem;
     font-weight: 700;
+    text-align: center;
 }
 
-.request {
-    padding: 1rem;
+.messageBox {
+    background-color: #F5F5F5;
+    width: 55vw;
+    height: 72vh;
     display: flex;
     flex-direction: column;
-    background-color: #F5F5F5;
-    /* width: 60vw; */
+    border-radius: 10px;
+    padding: 1rem;
     /* gap: 1rem; */
+}
+
+.contentBox {
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+
+.messageBox .title {
+    display: grid;
+    width: 100%;
+    justify-content: space-between;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 0 1rem;
+}
+
+.messageBox .content {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: .5rem 1rem;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.title span {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.content span {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.content div button {
+    padding: 5px 12px;
+    color: white;
+    font-weight: 500;
+    border-radius: 10px;
+    background-color: #0046B9;
+    border: 1px solid #0046B9;
+}
+
+.content div button:hover {
+    background-color: transparent;
+    color: black;
+    border: 1px solid #0046B9;
+}
+
+@media (max-width: 768px) and (min-width: 481px) {
+    .message .messageContainer {
+        justify-content: center;
+        background-color: orange;
+        gap: 1rem;
+    }
+
+    .messageBox {
+        width: 70vw;
+    }
 }

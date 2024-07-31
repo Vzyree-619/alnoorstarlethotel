@@ -65,7 +65,7 @@
 
 @media (max-width: 922px) and (min-width:857px) {
     .dashboardContainer .dashboardRow {
-        gap: 2rem;
+        gap: 1rem;
     }
 }
 
@@ -93,13 +93,22 @@
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        gap: 2rem;
+        gap: 1rem;
     }
 }
 
 @media (max-width: 583px) and (min-width: 481px) {
     .dashboard .linkBox {
-        width: 11rem;
-        height: 11rem;
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .dashboard .dashboardGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .dashboardContainer .dashboardRow {
+        gap: 1rem;
+        padding: 1rem;
     }
 }

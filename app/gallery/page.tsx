@@ -2,6 +2,7 @@ import Image from 'next/image';
 import BgImage from '../Components/BgImage/BgImage';
 import Header from '../Components/Header/Header';
 import styles from './gallery.module.css';
+import Footer from '../Components/Footer/Footer';
 
 // const galleryImage = [
 //   {
@@ -219,6 +220,7 @@ export default function Gallery() {
           </div>
         </div>
       </div>
+      <Footer />
     </section>
   );
 }

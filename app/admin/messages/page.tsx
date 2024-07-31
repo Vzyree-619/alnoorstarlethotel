@@ -1,46 +1,27 @@
-import { Link } from 'lucide-react';
 import DashHeader from '../DashHeader/DashHeader';
 import DashSideBar from '../DashSideBar/DashSideBar';
 import styles from './message.module.css';
 
-interface messageProp {
-  name: String;
-  subject: String;
+interface MessageProp {
+  name: string;
+  subject: string;
 }
 
-const message: messageProp[] = [
-  {
-    name: 'Ahmad Ali',
-    subject: 'General Inquiry',
-  },
-  {
-    name: 'Ahmad Ali',
-    subject: 'General Inquiry',
-  },
-  {
-    name: 'Ahmad Ali',
-    subject: 'General Inquiry',
-  },
-  {
-    name: 'Ahmad Ali',
-    subject: 'General Inquiry',
-  },
-  {
-    name: 'Ahmad Ali',
-    subject: 'General Inquiry',
-  },
-  {
-    name: 'Ahmad Ali',
-    subject: 'General Inquiry',
-  },
+const messages: MessageProp[] = [
+  { name: 'Ahmad Ali', subject: 'General Inquiry' },
+  { name: 'Ahmad Ali', subject: 'General Inquiry' },
+  { name: 'Ahmad Ali', subject: 'General Inquiry' },
+  { name: 'Ahmad Ali', subject: 'General Inquiry' },
+  { name: 'Ahmad Ali', subject: 'General Inquiry' },
+  { name: 'Ahmad Ali', subject: 'General Inquiry' },
 ];
 
-export default function ReservationDate() {
+export default function Message() {
   return (
     <section className={styles.message}>
       <DashHeader />
       <div className={styles.messageContainer}>
-        <DashSideBar />{' '}
+        <DashSideBar />
         <div className={styles.messageColumn}>
           <h1>Messages</h1>
           <div className={styles.messageBox}>
@@ -48,17 +29,20 @@ export default function ReservationDate() {
               <span>Name</span>
               <span>Subject</span>
             </div>
-
-            {message.map((content, index) => (
-              <div key={index} className={`${styles.title} ${styles.content}`}>
-                <span>{content.name}</span>
-                <span>{content.subject}</span>
-                <div>
-                  <button>See Message</button>
+            <div className={styles.contentBox}>
+              {messages.map((content, index) => (
+                <div
+                  key={index}
+                  className={`${styles.title} ${styles.content}`}
+                >
+                  <span>{content.name}</span>
+                  <span>{content.subject}</span>
+                  <div>
+                    <button>See Message</button>
+                  </div>
                 </div>
-              </div>
-            ))}
-            {/* <div className={styles.name}></div> */}
+              ))}
+            </div>
           </div>
         </div>
       </div>

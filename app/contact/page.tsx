@@ -11,6 +11,7 @@ import {
 } from 'react-icons/fa6';
 import ContactForm from '../Components/contactForm/contactForm';
 import Map from '../Components/map/Map';
+import Footer from '../Components/Footer/Footer';
 
 export default function Contact() {
   return (
@@ -63,6 +64,7 @@ export default function Contact() {
           <h1 className={styles.mainTitle}>Our Location</h1>
           <Map />
         </div>
+        <Footer />
       </section>
     </>
   );
