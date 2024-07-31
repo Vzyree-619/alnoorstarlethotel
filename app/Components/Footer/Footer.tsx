@@ -47,17 +47,22 @@ export default function Footer() {
             Location: Near Global Filling Station, Airport road, Skardu
           </p>
           <div className={styles.mediaLink}>
-            <Link href={'/'}>
+            <Link
+              href={'https://www.facebook.com/alnoorguesthouseskardu'}
+              target='blank'
+            >
               <FaSquareFacebook />
             </Link>
             <Link href={'/'}>
               <FaXTwitter />
             </Link>
-            <Link href={'/'}>
+            <Link
+              href={
+                'https://www.instagram.com/alnoorhotelskardu?fbclid=IwY2xjawEWvIxleHRuA2FlbQIxMAABHXbRncimNfiy18NW4_blFW9KuOwy6wU5OBOSavSqupl8UHEPTF0WjLxioQ_aem_E3iNARyW4SU2KDANqyOaRw'
+              }
+              target='blank'
+            >
               <FaInstagram />
-            </Link>
-            <Link href={'/'}>
-              <FaLinkedinIn />
             </Link>
           </div>
         </div>

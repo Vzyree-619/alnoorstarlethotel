@@ -1,0 +1,77 @@
+.message {
+    width: 100%;
+    height: auto;
+}
+
+.message .messageContainer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: start;
+    /* gap: 1rem; */
+    padding: 1rem;
+}
+
+
+.messageContainer h1 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.messageBox {
+    background-color: #F5F5F5;
+    width: 55vw;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    /* gap: 1rem; */
+}
+
+.messageBox .title {
+    display: flex;
+    width: 52%;
+    justify-content: space-between;
+    /* grid-template-columns: repeat(3, 1fr); */
+    padding: 0 1rem;
+}
+
+.messageBox .content {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: .5rem 1rem;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 1rem;
+}
+
+.title span {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.content span {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.content div button {
+    padding: 5px 12px;
+    color: white;
+    font-weight: 500;
+    border-radius: 10px;
+    background-color: #0046B9;
+    border: 1px solid #0046B9;
+}
+
+.content div button:hover {
+    background-color: transparent;
+    color: black;
+    border: 1px solid #0046B9;
+}

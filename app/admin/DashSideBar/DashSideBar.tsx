@@ -10,7 +10,7 @@ export default function DashSideBar() {
           Reservation Requests
         </NavLink>
         <NavLink href={'/admin/reservationDates'}>Reservation Dates</NavLink>
-        <NavLink href={'/messages'}>Messages</NavLink>
+        <NavLink href={'/admin/messages'}>Messages</NavLink>
       </nav>
       <button className={styles.logOut}>LogOut</button>
     </div>
