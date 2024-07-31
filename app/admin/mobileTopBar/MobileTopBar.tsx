@@ -1,9 +1,10 @@
 import NavLink from '../NavLink/NavLink';
-import styles from './dashSideBar.module.css';
+import styles from './mobileTopBar.module.css';
 
-export default function DashSideBar() {
+const TopBar: React.FC = () => {
   return (
-    <div className={styles.dashSideBar}>
+    <div className={styles.topBar}>
+      {/* TopBar content, like a mobile navigation or header */}
       <nav>
         <NavLink href={'/admin/dashboard'}>Rooms</NavLink>
         <NavLink href={'/admin/reservation_requests'}>
@@ -12,7 +13,8 @@ export default function DashSideBar() {
         <NavLink href={'/admin/reservationDates'}>Reservation Dates</NavLink>
         <NavLink href={'/admin/messages'}>Messages</NavLink>
       </nav>
-      <button className={styles.logOut}>LogOut</button>
     </div>
   );
-}
+};
+
+export default TopBar;

@@ -27,12 +27,12 @@ export default function ContactForm({action}) {
             <input type='number' name='Number' required />
           </div>
           <div className={styles.select}>
-            <h2>Select Subject</h2>
-            <select name="option" id="">
+            {/* <h2>Select Subject</h2> */}
+            {/* <select name="option" id="">
               <option value="issue">issue</option> 
               <option value="nothing">issue</option> 
               <option value="great">issue</option> 
-            </select>
+            </select> */}
             {/* <div className={styles.radioContainer}>
               <div className={styles.radioBox}>
                 <input name='option' type='radio' />

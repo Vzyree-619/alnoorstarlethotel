@@ -25,10 +25,18 @@
 .messageBox {
     background-color: #F5F5F5;
     width: 55vw;
+    height: 72vh;
     display: flex;
     flex-direction: column;
+    border-radius: 10px;
     padding: 1rem;
     /* gap: 1rem; */
+}
+
+.contentBox {
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
 }
 
 .messageBox .title {
@@ -47,7 +55,6 @@
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    grid-template-columns: repeat(3, 1fr);
     margin-top: 1rem;
 }
 
@@ -74,4 +81,16 @@
     background-color: transparent;
     color: black;
     border: 1px solid #0046B9;
+}
+
+@media (max-width: 768px) and (min-width: 481px) {
+    .message .messageContainer {
+        justify-content: center;
+        background-color: orange;
+        gap: 1rem;
+    }
+
+    .messageBox {
+        width: 70vw;
+    }
 }
