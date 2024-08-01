@@ -2,7 +2,7 @@
 import { createMessage } from "@/lib/sendMessage"
 import { revalidatePath } from "next/cache"
 import { redirect } from "next/navigation"
-import { createBooking } from "@/lib/sendMessage"
+import { createBooking } from "@/lib/sendBooking"
 
 
 export default async function contactSubmission(prevState,formData:any){

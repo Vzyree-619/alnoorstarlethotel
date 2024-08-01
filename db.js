@@ -31,6 +31,7 @@ function initDb() {
     )`);
 }
 
+
 initDb();
 
 export default db;
