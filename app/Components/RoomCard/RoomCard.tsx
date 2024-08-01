@@ -19,7 +19,7 @@ const roomData: RoomProp[] = [
   {
     roomImage: '/roomImg1.png',
     roomTitle: 'Family Suite',
-    roomPrice: '23,000',
+    roomPrice: '28,000',
     roomBeds: '3 Beds (1 Master + 2 Single Bed)',
     buttons: [
       'Breakfast Included',
@@ -41,7 +41,7 @@ const roomData: RoomProp[] = [
   {
     roomImage: '/roomImg2.png',
     roomTitle: 'Luxury Suite',
-    roomPrice: '28,000',
+    roomPrice: '23,000',
     roomBeds: '1 Bed (1 Master Bed)',
     buttons: [
       'Breakfast Included',
@@ -83,7 +83,7 @@ const roomData: RoomProp[] = [
   {
     roomImage: '/roomImg4.png',
     roomTitle: 'Executive Lite',
-    roomPrice: '23,000',
+    roomPrice: '13,000',
     roomBeds: '1 Bed (1 Master Bed)',
     buttons: [
       'Breakfast Included',
