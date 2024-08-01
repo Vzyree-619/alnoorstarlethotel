@@ -116,7 +116,7 @@ export default function Gallery() {
               <div className={styles.photoBox}>
                 <Image
                   className={styles.galleryImg}
-                  src={'/gallery/img6.png'}
+                  src={'/gallery/img5.png'}
                   width={600}
                   height={600}
                   alt='Gallery Image'
@@ -134,7 +134,7 @@ export default function Gallery() {
               <div className={styles.photoBox}>
                 <Image
                   className={styles.galleryImg}
-                  src={'/gallery/img8.png'}
+                  src={'/luxurySuiteImg/img3.png'}
                   width={600}
                   height={600}
                   alt='Gallery Image'
