@@ -12,6 +12,7 @@ import {
 import ContactForm from '../Components/contactForm/contactForm';
 import Map from '../Components/map/Map';
 import Footer from '../Components/Footer/Footer';
+import Link from 'next/link';
 
 export default function Contact() {
   return (
@@ -61,6 +62,7 @@ export default function Contact() {
             </div>
             <ContactForm />
           </div>
+          {/* <Link href={}><Link/> */}
           <h1 className={styles.mainTitle}>Our Location</h1>
           <Map />
         </div>

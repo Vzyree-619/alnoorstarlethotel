@@ -1,5 +1,6 @@
-"use client";
+'use client';
 
+import Link from 'next/link';
 import { useFormStatus } from 'react-dom';
 
 export default function SubmitContactForm() {
@@ -11,7 +12,6 @@ export default function SubmitContactForm() {
 
   return (
     <>
-    
       <button type='submit'>Send Message</button>
     </>
   );
