@@ -23,8 +23,7 @@ export default function Footer() {
           />
           <p className={styles.footerPara}>
             Al Noor Starlet Hotel offers luxurious accommodations and
-            exceptional hospitality in a serene environment, perfect for a
-            relaxing getaway.
+            exceptional hospitality.
           </p>
         </div>
         <div className={`${styles.footerContent} ${styles.footerList}`}>
