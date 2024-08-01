@@ -19,7 +19,6 @@ export default function DashSideBar() {
             <MdMenu />
           </DropdownMenuTrigger>
           <DropdownMenuContent>
-            {/* <DropdownMenuLabel></DropdownMenuLabel> */}
             <DropdownMenuSeparator />
             <DropdownMenuItem>
               <NavLink href={'/admin/dashboard'}>Rooms</NavLink>
@@ -32,6 +31,9 @@ export default function DashSideBar() {
             </DropdownMenuItem>
             <DropdownMenuItem>
               <NavLink href={'/admin/messages'}>Messages</NavLink>
+            </DropdownMenuItem>
+            <DropdownMenuItem>
+              <button className={styles.logOut}>LogOut</button>
             </DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>

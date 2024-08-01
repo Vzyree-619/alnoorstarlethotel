@@ -21,7 +21,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: start;
-    gap: 5rem;
+    gap: 2rem;
 }
 
 .dashboardContainer .dashboardColumn {
@@ -92,9 +92,14 @@
     font-weight: 700;
 }
 
-@media (max-width: 922px) and (min-width:857px) {
+@media (max-width: 929px) and (min-width:857px) {
     .dashboardContainer .dashboardRow {
         gap: 1rem;
+    }
+
+    .dashboard .linkBox {
+        width: 11rem;
+        height: 11rem;
     }
 }
 
@@ -103,16 +108,19 @@
         gap: 1rem;
     }
 
-
     .dashboard .linkBox {
-        width: 11rem;
-        height: 11rem;
+        width: 10rem;
+        height: 10rem;
     }
 }
 
 @media (max-width: 768px) and (min-width: 584px) {
     .dashboard .dashboardBox {
-        grid-template-columns: repeat(2, 1fr);
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 3rem;
+        height: 74vh;
     }
 
     .dashboardContainer .dashboardRow {
@@ -123,6 +131,10 @@
         justify-content: center;
         align-items: center;
         gap: 1rem;
+    }
+
+    .dashboardRow .linkBox {
+        width: 27vw;
     }
 }
 
