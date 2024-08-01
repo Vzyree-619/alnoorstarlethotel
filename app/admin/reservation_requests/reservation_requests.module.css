@@ -51,22 +51,27 @@
     border: 1px solid black;
     border-radius: 10px;
     padding: .5rem 1rem;
-    display: grid;
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    grid-template-columns: 20% 20% 20% 20% 20%;
-    justify-content: space-between;
-    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    align-items: start;
     margin-top: 1rem;
+}
+
+.content .contentDiv {
+    font-weight: 700;
 }
 
 .title span {
     font-size: 16px;
-    font-weight: 700;
+    /* font-weight: 500; */
 }
 
-.content span {
+.content .contentDiv span {
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .content div button {
@@ -78,6 +83,15 @@
     border: 1px solid #0046B9;
 }
 
+.content textarea {
+    border: 1px solid black;
+    width: 100%;
+    height: auto;
+    padding: 10px   ;
+    border-radius: 10px;
+    resize: none;
+}
+
 .content div button:hover {
     background-color: transparent;
     color: black;
@@ -87,7 +101,7 @@
 @media (max-width: 768px) and (min-width: 481px) {
     .message .messageContainer {
         justify-content: center;
-        background-color: orange;
+        /* background-color: orange; */
         gap: 1rem;
     }
 

@@ -51,7 +51,6 @@ const messages: MessageProp[] = [
 
 export default async function Message() {
   let bookings = await getBookings()
-
   return (
     <section className={styles.message}>
       <DashHeader />
@@ -60,26 +59,31 @@ export default async function Message() {
         <div className={styles.messageColumn}>
           <h1>Messages</h1>
           <div className={styles.messageBox}>
-            <div className={styles.title}>
+            {/* <div className={styles.title}>
               <span>Name</span>
               <span>Room Type</span>
               <span>Guests</span>
               <span>Room</span>
               <span>Details</span>
-            </div>
+            </div> */}
             <div className={styles.contentBox}>
               {bookings.map((contents, index) => (
                 <div
                   key={index}
                   className={`${styles.title} ${styles.content}`}
                 >
-                  <span>{contents.firstName}</span>
-                  <span>{contents.secondName}</span>
-                  <span>{contents.guests}</span>
-                  <span>{contents.roomtype}</span>
-                  <div>
-                    <button>More Details</button>
+                  <div className={styles.contentDiv}>
+                    Name:
+                  <span>  {`${contents.firstName} ${contents.secondName}`}</span>
                   </div>
+                  {/* <span>{contents.secondName}</span> */}
+                  <textarea name="" id="" disabled>{contents.description}</textarea>
+                  <div className={styles.contentDiv}>Email:  <span>{contents.emailAddress}</span></div>
+                  <div className={styles.contentDiv}>Number:  <span>{contents.contactNumber}</span></div>
+                  <div className={styles.contentDiv}>Guest:  <span>{contents.guests}</span></div>
+                  <div className={styles.contentDiv}>Room Type:  <span>{contents.roomtype}</span></div>
+                  <div className={styles.contentDiv}>Check-In-Date:  <span>12-OCT-2024</span></div>
+                  <div className={styles.contentDiv}>Check-Out-Date:  <span>13-OCT-2024</span></div>
                 </div>
               ))}
             </div>
