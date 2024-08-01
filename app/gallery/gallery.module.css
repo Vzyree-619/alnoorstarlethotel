@@ -55,7 +55,7 @@
 
 .photoBox {
     width: 320px;
-    height: 320px;
+    height: 100%;
     object-fit: cover;
     /* background-color: orangered; */
 }
@@ -72,27 +72,52 @@
     }
 }
 
-@media (max-width: 1023px) and (min-width: 769px) {
+@media (max-width: 1023px) and (min-width: 887px) {
     .photoColumn .photoGrid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+        /* gap: .5rem; */
     }
 
     .photoBox {
-        width: 320px;
-        height: 320px;
+        width: 275px;
+        height: 275px;
+    }
+}
+@media (max-width: 876px) and (min-width: 769px) {
+    .photoColumn .photoGrid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: .5rem;
+    }
+
+    .photoBox {
+        width: 240px;
+        height: 240px;
     }
 }
 
-@media (max-width: 768px) and (min-width: 481px) {
+@media (max-width: 768px) and (min-width: 547px) {
     .photoColumn .photoGrid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
 
     .photoBox {
-        width: 40vw;
-        height: 280px;
+        width: 250px;
+        height: 250px;
+    }
+}
+@media (max-width: 546px) and (min-width: 481px) {
+    .photoColumn .photoGrid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: .5rem;
+    }
+
+    .photoBox {
+        width: 225px;
+        height: 225px;
     }
 }
 
@@ -101,5 +126,9 @@
         display: flex;
         flex-direction: column;
         gap: 1rem;
+    }
+
+    .photoBox {
+        width: 80vw;
     }
 }
