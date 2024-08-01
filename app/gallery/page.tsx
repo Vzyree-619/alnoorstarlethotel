@@ -107,7 +107,7 @@ export default function Gallery() {
               <div className={styles.photoBox}>
                 <Image
                   className={styles.galleryImg}
-                  src={'/ '}
+                  src={'/roomImg4.png'}
                   width={600}
                   height={600}
                   alt='Gallery Image'
