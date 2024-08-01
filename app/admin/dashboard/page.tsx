@@ -13,21 +13,12 @@ export default function DashboardManagement() {
           <div className={styles.dashboardColumn}>
             <h1>Room Management</h1>
             <div className={styles.dashboardGrid}>
-              {/* <Link href={'/'} className={styles.linkBox}>
-                Family Suite
+              <Link href={'/admin/dashboard/garden'} className={styles.linkBox}>
+                Garden
               </Link>
-              <Link href={'/'} className={styles.linkBox}>
-                Luxury Suite
-              </Link>
-              <Link href={'/'} className={styles.linkBox}>
-                Executive Suite
-              </Link>
-              <Link href={'/'} className={styles.linkBox}>
-                Executive Lite
-              </Link> */}
-              <div className={styles.linkBox}>Garden</div>
-              <div className={styles.linkBox}>Dinning</div>
               <div className={styles.linkBox}>Rooom</div>
+              <div className={styles.linkBox}>Dinning</div>
+              <div className={styles.linkBox}>Night</div>
             </div>
           </div>
         </div>

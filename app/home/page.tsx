@@ -23,6 +23,7 @@ import {
   SelectValue,
 } from '@/components/ui/select';
 import Footer from '../Components/Footer/Footer';
+import Link from 'next/link';
 
 export default function Home() {
   const [checkInDate, setCheckInDate] = useState<Date | null>(null);
@@ -125,9 +126,10 @@ export default function Home() {
                   </Select>
                 </div>
                 <div>
-                  <Button className={styles.checkButton}>
+                  {/* <Button>Check Availability</Button> */}
+                  <Link className={styles.checkButton} href='/room'>
                     Check Availability
-                  </Button>
+                  </Link>
                 </div>
               </form>
             </div>
