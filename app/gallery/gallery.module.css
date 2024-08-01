@@ -55,7 +55,7 @@
 
 .photoBox {
     width: 320px;
-    height: 100%;
+    height: 320px;
     object-fit: cover;
     /* background-color: orangered; */
 }
@@ -84,6 +84,7 @@
         height: 275px;
     }
 }
+
 @media (max-width: 876px) and (min-width: 769px) {
     .photoColumn .photoGrid {
         display: grid;
@@ -108,6 +109,7 @@
         height: 250px;
     }
 }
+
 @media (max-width: 546px) and (min-width: 481px) {
     .photoColumn .photoGrid {
         display: grid;

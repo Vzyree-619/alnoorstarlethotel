@@ -80,7 +80,7 @@ export default function Gallery() {
               <div className={styles.photoBox}>
                 <Image
                   className={styles.galleryImg}
-                  src={'/gallery/img2.png'}
+                  src={'/roomImg1.png'}
                   width={600}
                   height={600}
                   alt='Gallery Image'
@@ -89,7 +89,7 @@ export default function Gallery() {
               <div className={styles.photoBox}>
                 <Image
                   className={styles.galleryImg}
-                  src={'/gallery/img3.png'}
+                  src={'/roomImg2.png'}
                   width={600}
                   height={600}
                   alt='Gallery Image'
@@ -98,7 +98,7 @@ export default function Gallery() {
               <div className={styles.photoBox}>
                 <Image
                   className={styles.galleryImg}
-                  src={'/gallery/img4.png'}
+                  src={'/roomImg3.png'}
                   width={600}
                   height={600}
                   alt='Gallery Image'
@@ -107,7 +107,7 @@ export default function Gallery() {
               <div className={styles.photoBox}>
                 <Image
                   className={styles.galleryImg}
-                  src={'/gallery/img5.png'}
+                  src={'/ '}
                   width={600}
                   height={600}
                   alt='Gallery Image'
