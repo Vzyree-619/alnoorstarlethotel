@@ -30,7 +30,16 @@ export default function Gallery() {
               <div className={styles.photoBox}>
                 <Image
                   className={styles.galleryImg}
-                  src={'/gallery/img1.png'}
+                  src={'/garden/Frame29003.png'}
+                  width={600}
+                  height={600}
+                  alt='Gallery Image'
+                />
+              </div>
+              <div className={styles.photoBox}>
+                <Image
+                  className={styles.galleryImg}
+                  src={'/garden/Frame29002.png'}
                   width={600}
                   height={600}
                   alt='Gallery Image'
@@ -48,7 +57,7 @@ export default function Gallery() {
               <div className={styles.photoBox}>
                 <Image
                   className={styles.galleryImg}
-                  src={'/gallery/img1.png'}
+                  src={'/garden/Frame29002.png'}
                   width={600}
                   height={600}
                   alt='Gallery Image'
@@ -57,16 +66,7 @@ export default function Gallery() {
               <div className={styles.photoBox}>
                 <Image
                   className={styles.galleryImg}
-                  src={'/gallery/img1.png'}
-                  width={600}
-                  height={600}
-                  alt='Gallery Image'
-                />
-              </div>
-              <div className={styles.photoBox}>
-                <Image
-                  className={styles.galleryImg}
-                  src={'/gallery/img1.png'}
+                  src={'/garden/Frame29003.png'}
                   width={600}
                   height={600}
                   alt='Gallery Image'
@@ -80,15 +80,6 @@ export default function Gallery() {
               <div className={styles.photoBox}>
                 <Image
                   className={styles.galleryImg}
-                  src={'/roomImg1.png'}
-                  width={600}
-                  height={600}
-                  alt='Gallery Image'
-                />
-              </div>
-              <div className={styles.photoBox}>
-                <Image
-                  className={styles.galleryImg}
                   src={'/roomImg2.png'}
                   width={600}
                   height={600}
@@ -98,16 +89,7 @@ export default function Gallery() {
               <div className={styles.photoBox}>
                 <Image
                   className={styles.galleryImg}
-                  src={'/roomImg3.png'}
-                  width={600}
-                  height={600}
-                  alt='Gallery Image'
-                />
-              </div>
-              <div className={styles.photoBox}>
-                <Image
-                  className={styles.galleryImg}
-                  src={'/roomImg4.png'}
+                  src={'/roomImg1.png'}
                   width={600}
                   height={600}
                   alt='Gallery Image'
@@ -125,7 +107,25 @@ export default function Gallery() {
               <div className={styles.photoBox}>
                 <Image
                   className={styles.galleryImg}
+                  src={'/roomImg3.png'}
+                  width={600}
+                  height={600}
+                  alt='Gallery Image'
+                />
+              </div>
+              <div className={styles.photoBox}>
+                <Image
+                  className={styles.galleryImg}
                   src={'/gallery/img7.png'}
+                  width={600}
+                  height={600}
+                  alt='Gallery Image'
+                />
+              </div>
+              <div className={styles.photoBox}>
+                <Image
+                  className={styles.galleryImg}
+                  src={'/roomImg4.png'}
                   width={600}
                   height={600}
                   alt='Gallery Image'
@@ -166,7 +166,7 @@ export default function Gallery() {
               <div className={styles.photoBox}>
                 <Image
                   className={styles.galleryImg}
-                  src={'/gallery/img9.png'}
+                  src={'/gallery/img12.png'}
                   width={600}
                   height={600}
                   alt='Gallery Image'
@@ -175,7 +175,7 @@ export default function Gallery() {
               <div className={styles.photoBox}>
                 <Image
                   className={styles.galleryImg}
-                  src={'/gallery/img9.png'}
+                  src={'/gallery/img11.png'}
                   width={600}
                   height={600}
                   alt='Gallery Image'
@@ -184,7 +184,7 @@ export default function Gallery() {
               <div className={styles.photoBox}>
                 <Image
                   className={styles.galleryImg}
-                  src={'/gallery/img9.png'}
+                  src={'/gallery/img12.png'}
                   width={600}
                   height={600}
                   alt='Gallery Image'
@@ -193,7 +193,7 @@ export default function Gallery() {
               <div className={styles.photoBox}>
                 <Image
                   className={styles.galleryImg}
-                  src={'/gallery/img9.png'}
+                  src={'/gallery/img11.png'}
                   width={600}
                   height={600}
                   alt='Gallery Image'
@@ -202,7 +202,7 @@ export default function Gallery() {
               <div className={styles.photoBox}>
                 <Image
                   className={styles.galleryImg}
-                  src={'/gallery/img9.png'}
+                  src={'/gallery/img12.png'}
                   width={600}
                   height={600}
                   alt='Gallery Image'
@@ -211,7 +211,7 @@ export default function Gallery() {
               <div className={styles.photoBox}>
                 <Image
                   className={styles.galleryImg}
-                  src={'/gallery/img9.png'}
+                  src={'/gallery/img11.png'}
                   width={600}
                   height={600}
                   alt='Gallery Image'
