@@ -61,7 +61,7 @@
     font-weight: 500;
 }
 
-.second button {
+.second .button {
     padding: .5rem 1rem;
     background-color: #0046B9;
     border: none;
@@ -70,6 +70,7 @@
     width: 13rem;
     font-size: 1.1rem;
     font-weight: 600;
+    text-align: center;
     color: white;
     border: 2px solid transparent;
     transition: .5s;
@@ -134,7 +135,7 @@
         height: 185px;
     }
 
-    .second button {
+    .second .button {
         padding: .5rem 1rem;
         background-color: #0046B9;
         border: none;
@@ -166,7 +167,7 @@
     }
 
 
-    .second button {
+    .second .button {
         padding: .25rem 1rem;
         background-color: #0046B9;
         border: none;
@@ -201,7 +202,7 @@
         gap: .5rem;
     }
 
-    .second button {
+    .second .button {
         padding: .25rem 1rem;
         background-color: #0046B9;
         border: none;

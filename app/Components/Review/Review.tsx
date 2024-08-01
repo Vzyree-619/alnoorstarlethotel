@@ -62,7 +62,7 @@ export default function Review() {
                   <h2>Adnan Shafiq</h2>
                 </div>
               </div>
-              <p>Above Average stay </p>
+              <p>Above Average stay.</p>
             </div>
             <div className={styles.item}>
               <div className={styles.itemProfile}>
@@ -101,14 +101,22 @@ export default function Review() {
             </div>
             <div className={styles.item}>
               <div className={styles.itemProfile}>
-                <div className={styles.radiusImg}></div>
+                <div className={styles.radiusImg}>
+                  {' '}
+                  <Image
+                    src={'/reviewImg4.png'}
+                    width={50}
+                    height={50}
+                    alt='Image'
+                  />
+                </div>
                 <div className={styles.text}>
                   <h2>Fida Ali Vzyree</h2>
                 </div>
               </div>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Extraordinary rooms with professional staff. Totally worth the
+                money.
               </p>
             </div>
           </div>

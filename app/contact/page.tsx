@@ -29,11 +29,11 @@ export default function Contact() {
               <div className={styles.boxAbout}>
                 <div className={styles.aboutItem}>
                   <BiSolidPhoneCall />
-                  <span>+1012 3456 789</span>
+                  <span>03485367621</span>
                 </div>
                 <div className={styles.aboutItem}>
                   <IoMailSharp />
-                  <span>info@alnoorstarlethotel.com</span>
+                  <span>alnoorstarlethotel@gmail.com</span>
                 </div>
                 <div className={styles.aboutItem}>
                   <MdLocationPin />

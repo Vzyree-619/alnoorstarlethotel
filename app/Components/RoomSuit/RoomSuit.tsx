@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import styles from './roomSuit.module.css';
+import Link from 'next/link';
 
 interface SuitProp {
   mainTitle: string;
@@ -51,7 +52,10 @@ export default function RoomSuit({
               <h3>
                 PKR {price} <sub>Per Night</sub>
               </h3>
-              <button>Reserve Now</button>
+              <Link href={'/booking'} className={styles.button}>
+                {' '}
+                Reserve Now
+              </Link>
             </div>
           </div>
           <div className={styles.columnImage1}>

@@ -63,7 +63,7 @@ const roomData: RoomProp[] = [
     roomImage: '/roomImg3.png',
     roomTitle: 'Executive Suite',
     roomPrice: '23,000',
-    roomBeds: '3 Beds (1 Master + 1 Single Bed)',
+    roomBeds: '2 Bed (1 Master + 1 Single Bed) ',
     buttons: [
       'Breakfast Included',
       'Air Conditioned',
@@ -84,7 +84,7 @@ const roomData: RoomProp[] = [
     roomImage: '/roomImg4.png',
     roomTitle: 'Executive Lite',
     roomPrice: '13,000',
-    roomBeds: '1 Bed (1 Master Bed)',
+    roomBeds: '2 Bed (1 Master + 1 Single Bed) ',
     buttons: [
       'Breakfast Included',
       'Without AC',
@@ -122,7 +122,7 @@ export default function RoomCard() {
               <Link href={roomContent.href} className={styles.title}>
                 {roomContent.roomTitle}
               </Link>
-              <button>Book Now</button>
+              <Link href={'/booking'} className={styles.button}>Book Now</Link>
               {/* </div> */}
               {/* <div className={styles.second}> */}
               <h3>

@@ -43,8 +43,8 @@ export default function Footer() {
         </div>
         <div className={`${styles.footerContent} ${styles.footerInfo}`}>
           <h3>Contact Info</h3>
-          <p>Phone: 1234567890</p>
-          <p>Email: info@alnoorstarlethotel.com</p>
+          <p>Phone: 03485367621</p>
+          <p>Email: alnoorstarlethotel@gmail.com</p>
           <p className={styles.lineHeight}>
             Location: Near Global Filling Station, Airport road, Skardu
           </p>

@@ -16,15 +16,15 @@ export default function DashHeader() {
 
   return (
     <header className={styles.dashHeader}>
-      <Link href={'/'}>
-        <Image
-          src={'/logo.png'}
-          alt='logo'
-          className={styles.logo}
-          width={464}
-          height={75}
-        />
-      </Link>
+      {/* <Link href={'/'}> */}
+      <Image
+        src={'/logo.png'}
+        alt='logo'
+        className={styles.logo}
+        width={464}
+        height={75}
+      />
+      {/* </Link> */}
       <div className={styles.profileName}>
         <span>Admin</span>
         <div className={styles.avatar}>
