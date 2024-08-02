@@ -1,11 +1,20 @@
+
+
+
+
+'use client';
+
 import Link from 'next/link';
-import styles from '../../upload.module.css';
+import styles from  '@/app/admin/dashboard/upload.module.css';
 import { ImageUp } from 'lucide-react';
 import Image from 'next/image';
 import DashSideBar from '@/app/admin/DashSideBar/DashSideBar';
 import DashHeader from '@/app/admin/DashHeader/DashHeader';
 
-export default function DashboardManagement() {
+import SubmitImage from './submitImage';
+import { useFormState } from 'react-dom';
+export default function DiningImage({ action }) {
+  const [state, formAction] = useFormState(action, {});
   return (
     <section className={styles.dashboard}>
       <DashHeader />
@@ -13,7 +22,7 @@ export default function DashboardManagement() {
         <div className={styles.dashboardRow}>
           <DashSideBar />
           <div className={styles.dashboardColumn}>
-            <h1>Garden</h1>
+            <h1>Dinning</h1>
             <div className={styles.uploadDiv}>
               <span>
                 {/* <ImageUp /> */}
@@ -26,11 +35,16 @@ export default function DashboardManagement() {
               </span>
               <h2>Image Upload</h2>
             </div>
-            {/* <button> */}
+            <form action={formAction}>
             <label htmlFor='' className={styles.addImage}>
-              <input type='file' name='ImageGarden' id='' />
-              Upload
+              <input type='file' name='ImageDining' id='' />
+              
+              
             </label>
+             <SubmitImage/>
+            </form>
+            {/* <button> */}
+            
             {/* </button> */}
             {/* <div className={styles.dashboardGrid}></div> */}
           </div>
@@ -38,4 +52,5 @@ export default function DashboardManagement() {
       </div>
     </section>
   );
+
 }

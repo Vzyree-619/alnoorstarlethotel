@@ -1,45 +1,8 @@
-import Link from 'next/link';
-import styles from '../../upload.module.css';
-import { ImageUp } from 'lucide-react';
-import Image from 'next/image';
-import DashSideBar from '@/app/admin/DashSideBar/DashSideBar';
-import DashHeader from '@/app/admin/DashHeader/DashHeader';
 
+import { diningImageSubmission } from "@/actions/action"
+import DiningImage from "@/components/ui/imageUpload/diningForm"
 export default function DashboardManagement() {
-  return (
-    <section className={styles.dashboard}>
-      <DashHeader />
-      <div className={styles.dashboardContainer}>
-        <div className={styles.dashboardRow}>
-          <DashSideBar />
-          <div className={styles.dashboardColumn}>
-            <h1>Dinning</h1>
-            <div className={styles.uploadDiv}>
-              <span>
-                {/* <ImageUp /> */}
-                <Image
-                  src={'/icon.png'}
-                  width={100}
-                  height={100}
-                  alt='Upload Image'
-                />
-              </span>
-              <h2>Image Upload</h2>
-            </div>
-            <form action="">
-            <label htmlFor='' className={styles.addImage}>
-              <input type='file' name='ImageDining' id='' />
-              Upload
-              <button>upload</button>
-            </label>
-            </form>
-            {/* <button> */}
-            
-            {/* </button> */}
-            {/* <div className={styles.dashboardGrid}></div> */}
-          </div>
-        </div>
-      </div>
-    </section>
-  );
+    
+    
+  return <DiningImage action={diningImageSubmission}/>
 }
