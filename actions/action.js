@@ -11,14 +11,22 @@ import { createNightImage } from "@/lib/sendNightImg"
 import { createDiningImage } from "@/lib/sendDiningImg"
 import { createGardenImage } from "@/lib/sendGardenImg"
 
+<<<<<<< HEAD
 export default async function contactSubmission(prevState,formData){
+=======
+export default async function ContactSubmission(prevState,formData){
+>>>>>>> efc30f0731400b2545a06a6a60480a0c855c7609
     
     const firstName =formData.get('firstN')
     const secondName = formData.get('secondN')
     const emailAddress = formData.get('email')
     const contactNumber = formData.get('Number')
     const description = formData.get('description')
+<<<<<<< HEAD
     console.log(firstName,secondName,emailAddress,contactNumber,description)
+=======
+
+>>>>>>> efc30f0731400b2545a06a6a60480a0c855c7609
 
    
     let errors = [];
@@ -71,7 +79,11 @@ export async function BookingSubmission (prevState,formData){
     const guests = formData.get('guests')
     const roomtype = formData.get("roomtype") 
 
+<<<<<<< HEAD
     console.log(firstName,secondName,emailAddress,contactNumber,description,guests,roomtype)
+=======
+    
+>>>>>>> efc30f0731400b2545a06a6a60480a0c855c7609
 
 
     await createBooking({
@@ -89,7 +101,11 @@ export async function BookingSubmission (prevState,formData){
     redirect('/');
   
 }
+<<<<<<< HEAD
 export async function gardenImageSubmission(prevState,formData){
+=======
+export async function GardenImageSubmission(prevState,formData){
+>>>>>>> efc30f0731400b2545a06a6a60480a0c855c7609
   const Image = formData.get("ImageGarden")
 
   let errors = [];
@@ -143,7 +159,11 @@ export async function roomImageSubmission(prevState,formData){
   redirect('/admin/dashboard/room');
 
 }
+<<<<<<< HEAD
 export async function diningImageSubmission(prevState,formData){
+=======
+export async function DiningImageSubmission(prevState,formData){
+>>>>>>> efc30f0731400b2545a06a6a60480a0c855c7609
   const Image = formData.get("ImageDining")
   let errors = [];
   if (!Image || Image.size === 0) {

@@ -1,4 +1,4 @@
-'use client';
+
 
 import { BookingSubmission } from "@/actions/action";
 import SubmitBooking from "@/components/ui/bookingForm";

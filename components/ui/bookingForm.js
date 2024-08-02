@@ -1,3 +1,5 @@
+"use client"
+
 import SubmitBooking from './bookingsubmit';
 import Image from 'next/image';
 import Header from '@/app/Components/Header/Header';
@@ -33,8 +35,8 @@ export default function bookingForm({ action }) {
   const [state, formAction] = useFormState(action, {});
   
 
-  const [checkInDate, setCheckInDate] = useState<Date | null>(null);
-  const [checkOutDate, setCheckOutDate] = useState<Date | null>(null);
+  // const [checkInDate, setCheckInDate] = useState<Date | null>(null);
+  // const [checkOutDate, setCheckOutDate] = useState<Date | null>(null);
   return (
     <section className={styles.booking}>
       <Header bgColor='transparent' />
@@ -51,7 +53,7 @@ export default function bookingForm({ action }) {
             <input name='lastName' required type='text' />
           </div>
           <div>
-            <label htmlFor=''>Check In:</label>
+            {/* <label htmlFor=''>Check In:</label>
             <Popover>
               <PopoverTrigger 
                 className={`${styles.input} ${styles.checkInDate}`}
@@ -82,8 +84,8 @@ export default function bookingForm({ action }) {
             </Popover>
           </div>
           <div>
-            <label htmlFor=''>Check Out:</label>
-            <Popover>
+            <label htmlFor=''>Check Out:</label> */}
+            {/* <Popover>
               <PopoverTrigger
                 className={`${styles.input} ${styles.checkOutDate}`}
                 asChild 
@@ -110,7 +112,7 @@ export default function bookingForm({ action }) {
                   initialFocus
                 />
               </PopoverContent>
-            </Popover>
+            </Popover> */}
           </div>
           <div>
             <label htmlFor=''>Whatsapp No:</label>
