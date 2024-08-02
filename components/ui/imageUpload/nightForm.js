@@ -31,7 +31,7 @@ export default function NightImage({action}){
                   <h2>Drag & drop to upload</h2>
                 </div>
                 {/* <button> */}
-                <form action={formAction}>
+                <form action="">
                 <label htmlFor='' className={styles.addImage}>
                   <input type='file' name='ImageNight' id='' />
                 
