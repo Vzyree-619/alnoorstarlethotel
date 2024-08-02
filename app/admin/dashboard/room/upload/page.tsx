@@ -28,7 +28,7 @@ export default function DashboardManagement() {
             </div>
             {/* <button> */}
             <label htmlFor='' className={styles.addImage}>
-              <input type='file' name='Image' id='' />
+              <input type='file' name='ImageRoom' id='' />
               Upload
             </label>
             {/* </button> */}

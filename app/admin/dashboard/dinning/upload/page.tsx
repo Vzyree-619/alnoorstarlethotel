@@ -24,13 +24,17 @@ export default function DashboardManagement() {
                   alt='Upload Image'
                 />
               </span>
-              <h2>Drag & drop to upload</h2>
+              <h2>Image Upload</h2>
             </div>
-            {/* <button> */}
+            <form action="">
             <label htmlFor='' className={styles.addImage}>
-              <input type='file' name='Image' id='' />
+              <input type='file' name='ImageDining' id='' />
               Upload
+              <button>upload</button>
             </label>
+            </form>
+            {/* <button> */}
+            
             {/* </button> */}
             {/* <div className={styles.dashboardGrid}></div> */}
           </div>

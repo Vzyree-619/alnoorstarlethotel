@@ -15,6 +15,37 @@ function initDb() {
      
     
     )`);
+    db.exec(`
+      CREATE TABLE IF NOT EXISTS garden (
+        id INTEGER PRIMARY KEY, 
+        image_url TEXT NOT NULL,
+        created_at TEXT DEFAULT CURRENT_TIMESTAMP
+      )
+    `);
+
+db.exec(`
+  CREATE TABLE IF NOT EXISTS rooms (
+    id INTEGER PRIMARY KEY, 
+    image_url TEXT NOT NULL,
+    created_at TEXT DEFAULT CURRENT_TIMESTAMP
+  )
+`);
+
+db.exec(`
+  CREATE TABLE IF NOT EXISTS night (
+    id INTEGER PRIMARY KEY, 
+    image_url TEXT NOT NULL,
+    created_at TEXT DEFAULT CURRENT_TIMESTAMP
+  )
+`);
+
+db.exec(`
+  CREATE TABLE IF NOT EXISTS dining (
+    id INTEGER PRIMARY KEY, 
+    image_url TEXT NOT NULL,
+    created_at TEXT DEFAULT CURRENT_TIMESTAMP
+  )
+`);
   db.exec(`
     CREATE TABLE IF NOT EXISTS booking (
       id INTEGER PRIMARY KEY, 
