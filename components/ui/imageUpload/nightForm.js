@@ -1,3 +1,4 @@
+"use client"
 import Link from 'next/link';
 import styles from '@/app/admin/dashboard/upload.module.css';
 import { ImageUp } from 'lucide-react';
@@ -7,7 +8,7 @@ import DashHeader from '@/app/admin/DashHeader/DashHeader';
 import SubmitImage from './submitImage';
 import { useFormState } from 'react-dom';
 
-export default function NightImage(){
+export default function NightImage({action}){
     const [state, formAction] = useFormState(action, {});
     return (
         <section className={styles.dashboard}>

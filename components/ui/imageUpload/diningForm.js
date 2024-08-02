@@ -11,8 +11,11 @@ import Image from 'next/image';
 import DashSideBar from '@/app/admin/DashSideBar/DashSideBar';
 import DashHeader from '@/app/admin/DashHeader/DashHeader';
 
-import SubmitImage from './submitImage';
+
 import { useFormState } from 'react-dom';
+import SubmitImage from './submitImage';
+
+
 export default function DiningImage({ action }) {
   const [state, formAction] = useFormState(action, {});
   return (
@@ -35,7 +38,7 @@ export default function DiningImage({ action }) {
               </span>
               <h2>Image Upload</h2>
             </div>
-            <form action={formAction}>
+            <form action=''>
             <label htmlFor='' className={styles.addImage}>
               <input type='file' name='ImageDining' id='' />
               

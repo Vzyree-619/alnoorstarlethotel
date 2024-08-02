@@ -4,10 +4,7 @@ import DashHeader from '../DashHeader/DashHeader';
 import DashSideBar from '../DashSideBar/DashSideBar';
 import styles from './message.module.css';
 
-interface messageProp {
-  name: String;
-  subject: String;
-}
+
 
 export default async function ReservationDate() {
   const data1 = await getMessages();

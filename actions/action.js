@@ -11,14 +11,14 @@ import { createNightImage } from "@/lib/sendNightImg"
 import { createDiningImage } from "@/lib/sendDiningImg"
 import { createGardenImage } from "@/lib/sendGardenImg"
 
-export default async function contactSubmission(prevState,formData){
+export default async function ContactSubmission(prevState,formData){
     
     const firstName =formData.get('firstN')
     const secondName = formData.get('secondN')
     const emailAddress = formData.get('email')
     const contactNumber = formData.get('Number')
     const description = formData.get('description')
-    console.log(firstName,secondName,emailAddress,contactNumber,description)
+
 
    
     let errors = [];
@@ -71,7 +71,7 @@ export async function BookingSubmission (prevState,formData){
     const guests = formData.get('guests')
     const roomtype = formData.get("roomtype") 
 
-    console.log(firstName,secondName,emailAddress,contactNumber,description,guests,roomtype)
+    
 
 
     await createBooking({
@@ -89,7 +89,7 @@ export async function BookingSubmission (prevState,formData){
     redirect('/');
   
 }
-export async function gardenImageSubmission(prevState,formData){
+export async function GardenImageSubmission(prevState,formData){
   const Image = formData.get("ImageGarden")
 
   let errors = [];
@@ -143,7 +143,7 @@ export async function roomImageSubmission(prevState,formData){
   redirect('/admin/dashboard/room');
 
 }
-export async function diningImageSubmission(prevState,formData){
+export async function DiningImageSubmission(prevState,formData){
   const Image = formData.get("ImageDining")
   let errors = [];
   if (!Image || Image.size === 0) {

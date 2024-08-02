@@ -1,5 +1,5 @@
 
-
+"use client"
 import Link from 'next/link';
 import styles from '@/app/admin/dashboard/upload.module.css'
 import { ImageUp } from 'lucide-react';
@@ -7,9 +7,9 @@ import Image from 'next/image';
 import DashSideBar from '@/app/admin/DashSideBar/DashSideBar';
 import DashHeader from '@/app/admin/DashHeader/DashHeader';
 import SubmitImage from '@/components/ui/imageUpload/submitImage';
+import { useFormState } from 'react-dom';
 
-
-export default function GardenImage(){
+export default function GardenImage({action}){
     const [state, formAction] = useFormState(action, {});
     return (
         <section className={styles.dashboard}>

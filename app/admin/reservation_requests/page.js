@@ -1,54 +1,12 @@
-import Toust from '@/app/Components/Toust/Toust';
+// import Toust from '@/app/Components/Toust/Toust';
 import DashHeader from '../DashHeader/DashHeader';
 import DashSideBar from '../DashSideBar/DashSideBar';
 import styles from './reservation_requests.module.css';
 import { getBookings } from '@/lib/sendBooking';
 
-interface MessageProp {
-  name: string;
-  roomType: string;
-  guests: number;
-  room: number;
-}
 
-const messages: MessageProp[] = [
-  {
-    name: 'Ahmad Ali',
-    roomType: 'Executive',
-    guests: 5,
-    room: 2,
-  },
-  {
-    name: 'Ahmad Ali',
-    roomType: 'Executive',
-    guests: 5,
-    room: 2,
-  },
-  {
-    name: 'Ahmad Ali',
-    roomType: 'Executive',
-    guests: 5,
-    room: 2,
-  },
-  {
-    name: 'Ahmad Ali',
-    roomType: 'Executive',
-    guests: 5,
-    room: 2,
-  },
-  {
-    name: 'Ahmad Ali',
-    roomType: 'Executive',
-    guests: 5,
-    room: 2,
-  },
-  {
-    name: 'Ahmad Ali',
-    roomType: 'Executive',
-    guests: 5,
-    room: 2,
-  },
-];
+
+
 
 export default async function Message() {
   let bookings = await getBookings()
