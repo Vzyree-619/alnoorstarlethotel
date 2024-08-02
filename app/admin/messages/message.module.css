@@ -68,7 +68,7 @@
 .content textarea {
     border: 1px solid black;
     width: 100%;
-    height: auto;
+    height: 7rem;
     box-sizing: border-box;
     padding: 10px;
     border-radius: 10px;

@@ -1,13 +1,10 @@
 import { Inter } from 'next/font/google';
 import './globals.css';
-import Footer from './Components/Footer/Footer';
-// import { LoadingProvider } from './contexts/LoadingContext'; // Adjusted import path
-// import ClientLayout from './Components/ClientLayout/ClientLayout'; // Adjusted import path
 
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
-  title: 'All Noor',
+  title: 'All Noor Starlet Hotel',
   description: 'All Noor Guest House',
 };
 
@@ -17,15 +14,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    // <LoadingProvider>
     <html lang='en'>
+      <head>
+        <link rel='icon' href='/favicon.ico' sizes='any' />
+        <link
+          rel='icon'
+          href='/icon?<generated>'
+          type='image/<generated>'
+          sizes='<generated>'
+        />
+      </head>
       <body className={inter.className}>
-        {/* <ClientLayout> */}
         <main>{children}</main>
-        {/* <Footer /> */}
-        {/* </ClientLayout> */}
       </body>
     </html>
-    // </LoadingProvider>
   );
 }
