@@ -84,7 +84,7 @@
 }
 
 .dashboardColumn input[type="file"] {
-    display: none;
+    /* display: none; */
 }
 
 .dashboardColumn .addImage {

@@ -24,11 +24,11 @@ export default function DashboardManagement() {
                   alt='Upload Image'
                 />
               </span>
-              <h2>Drag & drop to upload</h2>
+              <h2>Image Upload</h2>
             </div>
             {/* <button> */}
             <label htmlFor='' className={styles.addImage}>
-              <input type='file' name='Image' id='' />
+              <input type='file' name='ImageGarden' id='' />
               Upload
             </label>
             {/* </button> */}
