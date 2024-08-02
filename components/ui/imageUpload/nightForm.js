@@ -6,10 +6,10 @@ import Image from 'next/image';
 import DashSideBar from '@/app/admin/DashSideBar/DashSideBar';
 import DashHeader from '@/app/admin/DashHeader/DashHeader';
 import SubmitImage from './submitImage';
-import { useFormState } from 'react';
+// import { useFormState } from 'react-dom';
 
 export default function NightImage({action}){
-    const [state, formAction] = useFormState(action, {});
+    // const [state, formAction] = useFormState(action, {});
     return (
         <section className={styles.dashboard}>
           <DashHeader />
