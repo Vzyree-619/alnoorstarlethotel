@@ -12,18 +12,12 @@ import { createDiningImage } from '@/lib/sendDiningImg';
 import { createGardenImage } from '@/lib/sendGardenImg';
 
 export default async function ContactSubmission(prevState, formData) {
-  // >>>>>>> efc30f0731400b2545a06a6a60480a0c855c7609
-
   const firstName = formData.get('firstN');
   const secondName = formData.get('secondN');
   const emailAddress = formData.get('email');
   const contactNumber = formData.get('Number');
   const description = formData.get('description');
-  // <<<<<<< HEAD
   console.log(firstName, secondName, emailAddress, contactNumber, description);
-  // =======
-
-  // >>>>>>> efc30f0731400b2545a06a6a60480a0c855c7609
 
   let errors = [];
 
@@ -69,7 +63,6 @@ export async function BookingSubmission(prevState, formData) {
   const guests = formData.get('guests');
   const roomtype = formData.get('roomtype');
 
-  // <<<<<<< HEAD
   console.log(
     firstName,
     secondName,
@@ -79,9 +72,6 @@ export async function BookingSubmission(prevState, formData) {
     guests,
     roomtype
   );
-  // =======
-
-  // >>>>>>> efc30f0731400b2545a06a6a60480a0c855c7609
 
   await createBooking({
     firstName,
@@ -97,7 +87,6 @@ export async function BookingSubmission(prevState, formData) {
   revalidatePath('/', 'layout');
   redirect('/');
 }
-// <<<<<<< HEAD
 export async function gardenImageSubmission(prevState, formData) {
   const Image = formData.get('ImageGarden');
 
@@ -150,7 +139,6 @@ export async function roomImageSubmission(prevState, formData) {
   redirect('/admin/dashboard/room');
 }
 export async function DiningImageSubmission(prevState, formData) {
-  // >>>>>>> efc30f0731400b2545a06a6a60480a0c855c7609
   const Image = formData.get('ImageDining');
   let errors = [];
   if (!Image || Image.size === 0) {
