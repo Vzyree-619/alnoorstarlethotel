@@ -9,11 +9,9 @@ import DashHeader from '@/app/admin/DashHeader/DashHeader';
 import SubmitImage from './submitImage';
 import { useFormState } from 'react-dom';
 
-<<<<<<< HEAD
-export default function RoomImage(){
-=======
+
 export default function RoomImage({action}){
->>>>>>> efc30f0731400b2545a06a6a60480a0c855c7609
+
     const [state, formAction] = useFormState(action, {});
      return (
         <section className={styles.dashboard}>
