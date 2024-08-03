@@ -54,7 +54,7 @@ export default function Footer() {
             >
               <FaSquareFacebook />
             </Link>
-            <Link href={'https://wa.me/03334441547'}>
+            <Link href={'https://wa.me/03334441547'} target='blank'>
               <FaWhatsapp />
             </Link>
             <Link

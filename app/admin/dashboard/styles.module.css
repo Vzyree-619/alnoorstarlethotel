@@ -148,7 +148,7 @@
         width: 100%;
         height: 54vh;
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
         overflow-y: scroll;
         gap: 1rem;
@@ -180,11 +180,6 @@
         gap: 1rem;
     }
 
-    /* 
-    .dashboard .linkBox {
-        width: 10rem;
-    } */
-
     .dashboardContainer .dashboardRow {
         gap: 1rem;
         padding: 1rem;
@@ -192,28 +187,39 @@
 }
 
 @media (max-width: 480px) and (min-width: 0px) {
+    .dashboardContainer .dashboardRow {
+        gap: 1rem;
+        padding: 1rem;
+    }
+
     .dashboard .linkBox {
         width: 100%;
-        height: 100%;
+        height: 15rem;
+    }
+
+    .dashboardContainer .dashboardColumn {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3rem;
+    }
+
+    .dashboard .dashboardBox {
+        height: auto;
     }
 
     .dashboardBox .grid {
         width: 90vw;
-        height: 64vh;
+        height: 100%;
         display: flex;
         flex-direction: column;
-        /* grid-template-columns: repeat(2, 1fr); */
-        /* grid-template-rows: repeat(2, 1fr); */
         justify-content: center;
         align-items: center;
         overflow-y: scroll;
         gap: 1rem;
     }
-
-    /* 
-    .dashboard .linkBox {
-        width: 10rem;
-    } */
 
     .dashboardContainer .dashboardRow {
         gap: 1rem;

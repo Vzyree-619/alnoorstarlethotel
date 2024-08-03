@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import NavLink from '../NavLink/NavLink';
 import styles from './dashSideBar.module.css';
 import {
@@ -46,7 +47,10 @@ export default function DashSideBar() {
           </NavLink>
           <NavLink href={'/admin/messages'}>Messages</NavLink>
         </nav>
-        <button className={styles.logOut}>LogOut</button>
+        <Link href='/admin' className={styles.logOut}>
+          LogOut
+          {/* <span className={styles.LogOut}>LogOut</span> */}
+        </Link>
       </div>
     </>
   );

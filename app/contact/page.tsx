@@ -48,16 +48,30 @@ export default function Contact() {
                 <div></div>
               </div>
               <div className={styles.contactIcon}>
-                <div className={styles.icon}>
+                <Link
+                  href={'https://wa.me/03334441547'}
+                  target='blank'
+                  className={styles.icon}
+                >
                   {/* <FaXTwitter /> */}
                   <FaWhatsapp />
-                </div>
-                <div className={styles.icon}>
+                </Link>
+                <Link
+                  href={
+                    'https://www.instagram.com/alnoorhotelskardu?fbclid=IwY2xjawEWvIxleHRuA2FlbQIxMAABHXbRncimNfiy18NW4_blFW9KuOwy6wU5OBOSavSqupl8UHEPTF0WjLxioQ_aem_E3iNARyW4SU2KDANqyOaRw'
+                  }
+                  target='blank'
+                  className={styles.icon}
+                >
                   <FaInstagram />
-                </div>
-                <div className={styles.icon}>
+                </Link>
+                <Link
+                  href={'https://www.facebook.com/alnoorguesthouseskardu'}
+                  target='blank'
+                  className={styles.icon}
+                >
                   <FaFacebookF />
-                </div>
+                </Link>
               </div>
             </div>
             <ContactForm />
