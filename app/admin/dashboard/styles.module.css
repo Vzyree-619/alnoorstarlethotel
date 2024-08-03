@@ -134,7 +134,7 @@
     }
 
     .dashboardRow .linkBox {
-        width: 27vw;
+        width: 11rem;
     }
 }
 
@@ -144,8 +144,14 @@
         height: 10rem;
     }
 
-    .dashboard .dashboardBox {
-        grid-template-columns: repeat(2, 1fr);
+    .dashboardBox .grid {
+        width: 100%;
+        height: 54vh;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        overflow-y: scroll;
+        gap: 1rem;
     }
 
     .dashboardContainer .dashboardRow {
