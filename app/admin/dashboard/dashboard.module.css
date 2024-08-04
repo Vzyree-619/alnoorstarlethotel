@@ -115,7 +115,16 @@
 
 @media (max-width: 481px) and (min-width: 0) {
     .dashboard .dashboardGrid {
-        grid-template-columns: repeat(2, 1fr);
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dashboardContainer .dashboardColumn {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 75%;
     }
 
     .dashboard .dashboardColumn {

@@ -1,14 +1,12 @@
 'use client';
 
-import Link from 'next/link';
 import styles from '@/app/admin/dashboard/upload.module.css';
-import { ImageUp } from 'lucide-react';
 import Image from 'next/image';
 import DashSideBar from '@/app/admin/DashSideBar/DashSideBar';
 import DashHeader from '@/app/admin/DashHeader/DashHeader';
 
 import { useFormState } from 'react-dom';
-import SubmitImage from './submitImage';
+import DinningImageSubmit from './diningImageSubmit';
 
 export default function DiningImage({ action }) {
   const [state, formAction] = useFormState(action, {});
@@ -32,13 +30,18 @@ export default function DiningImage({ action }) {
               </span>
               <h2>Image Upload</h2>
             </div>
-            <form action={formAction}>
+            <form className={styles.formUploadImage} action={formAction}>
               <label htmlFor='' className={styles.addImage}>
-                <input type='file' name='ImageGarden' id='' />
-                Upload
-                <input type='file' name='ImageDining' id='' />
+                <input
+                  type='file'
+                  placeholder='Choose Image'
+                  name='ImageGarden'
+                  id=''
+                />
+
+                {/* <input type='file' name='ImageDining' id='' /> */}
               </label>
-              <SubmitImage />
+              <DinningImageSubmit />
             </form>
           </div>
         </div>

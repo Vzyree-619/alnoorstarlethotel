@@ -21,6 +21,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", ".next/types/app/room/layout.tsx", "lib/sendMessage.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", ".next/types/app/room/layout.tsx", "lib/sendMessage.js", "app/admin/dashboard/garden/page.jsx"],
   "exclude": ["node_modules"]
 }

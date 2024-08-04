@@ -1,10 +1,10 @@
-
 'use client';
 
+import styles from '@/app/admin/dashboard/upload.module.css';
 import Link from 'next/link';
 import { useFormStatus } from 'react-dom';
 
-export default function SubmitImage() {
+export default function DinningImageSubmit() {
   const status = useFormStatus();
 
   if (status.pending) {
@@ -13,9 +13,9 @@ export default function SubmitImage() {
 
   return (
     <>
-      <button type='submit'>Upload Image</button>
+      <button  className={styles.submitButton} type='submit'>
+        Upload Image
+      </button>
     </>
   );
 }
-
-

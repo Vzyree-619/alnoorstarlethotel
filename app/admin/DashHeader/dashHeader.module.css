@@ -30,3 +30,9 @@
     /* background-color: #D9D9D9; */
     overflow: hidden;
 }
+
+@media (max-width: 480px) and (min-width: 0) {
+    .dashHeader {
+        padding: .5rem 1rem;
+    }
+}

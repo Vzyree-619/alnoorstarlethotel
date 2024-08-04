@@ -4,6 +4,18 @@ import Header from '../Components/Header/Header';
 import styles from './gallery.module.css';
 import Footer from '../Components/Footer/Footer';
 
+const GalleryImage = [
+  {
+    image: '/gallery/img1.png',
+  },
+  {
+    image: '/gallery/img1.png',
+  },
+  {
+    image: '/gallery/img1.png',
+  },
+];
+
 export default function Gallery() {
   return (
     <section className={styles.gallery}>
@@ -217,6 +229,22 @@ export default function Gallery() {
                   alt='Gallery Image'
                 />
               </div>
+            </div>
+          </div>
+          <div className={styles.photoColumn}>
+            <h1>Night</h1>
+            <div className={styles.photoGrid}>
+              {GalleryImage.map((image, index) => (
+                <div key={index} className={styles.photoBox}>
+                  <Image
+                    className={styles.galleryImg}
+                    src={image.image}
+                    width={600}
+                    height={600}
+                    alt='Gallery Image'
+                  />
+                </div>
+              ))}
             </div>
           </div>
         </div>

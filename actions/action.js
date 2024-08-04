@@ -50,7 +50,7 @@ export default async function ContactSubmission(prevState, formData) {
     description,
     User_id: 1,
   });
-  revalidatePath('/', 'layout');
+  revalidatePath('/admin/messages', 'layout');
   redirect('/');
 }
 
@@ -135,7 +135,7 @@ export async function roomImageSubmission(prevState, formData) {
   await createRoomImage({
     imageUrl: imageUrl,
   });
-  revalidatePath('/', 'layout');
+  revalidatePath('/admin/reservation_requests', 'layout');
   redirect('/admin/dashboard/room');
 }
 export async function DiningImageSubmission(prevState, formData) {

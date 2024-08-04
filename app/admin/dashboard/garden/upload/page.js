@@ -1,8 +1,6 @@
-'use client';
-
-import { GardenImageSubmission } from '@/actions/action';
-import GardenImage from '@/components/ui/imageUpload/gardenForm';
+import { DiningImageSubmission } from '@/actions/action';
+import GardenImage from '@/components/ui/imageUpload/diningForm';
 
 export default function DashboardManagement() {
-  return <GardenImage action={GardenImageSubmission} />;
+  return <GardenImage action={DiningImageSubmission} />;
 }
