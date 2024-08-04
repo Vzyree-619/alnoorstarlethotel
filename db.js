@@ -24,7 +24,7 @@ function initDb() {
     `);
 
 db.exec(`
-  CREATE TABLE IF NOT EXISTS rooms (
+  CREATE TABLE IF NOT EXISTS room (
     id INTEGER PRIMARY KEY, 
     image_url TEXT NOT NULL,
     created_at TEXT DEFAULT CURRENT_TIMESTAMP
