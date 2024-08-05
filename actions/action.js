@@ -6,6 +6,7 @@ import { createBooking } from '@/lib/sendBooking';
 
 import { createRoomImage } from '@/lib/sendRoomImg';
 
+
 import { uploadImage } from '@/lib/cloudinary';
 import { createNightImage } from '@/lib/sendNightImg';
 import { createDiningImage } from '@/lib/sendDiningImg';
@@ -15,9 +16,10 @@ export default async function ContactSubmission(prevState, formData) {
   const firstName = formData.get('firstN');
   const secondName = formData.get('secondN');
   const emailAddress = formData.get('email');
+  
   const contactNumber = formData.get('Number');
   const description = formData.get('description');
-  console.log(firstName, secondName, emailAddress, contactNumber, description);
+  console.log(firstName, secondName, emailAddress, contactNumber, description,);
 
   let errors = [];
 
@@ -54,7 +56,16 @@ export default async function ContactSubmission(prevState, formData) {
   redirect('/');
 }
 
-export async function BookingSubmission(prevState, formData) {
+export async function BookingSubmission(prevState, formData,checkInDate,checkOutDate) {
+  console.log()
+  const suiteMapping = {
+    1: "Family Suite",
+    2: "Luxury Suite",
+    3: "Executive Suite",
+    4: "Executive Lite"
+  };
+  const checkIn = checkInDate
+  const checkOut = checkOutDate
   const firstName = formData.get('firstName');
   const secondName = formData.get('lastName');
   const emailAddress = formData.get('emailAdd');
@@ -62,6 +73,8 @@ export async function BookingSubmission(prevState, formData) {
   const description = formData.get('description');
   const guests = formData.get('guests');
   const roomtype = formData.get('roomtype');
+  const suiteText = suiteMapping[roomtype]
+
 
   console.log(
     firstName,
@@ -70,7 +83,9 @@ export async function BookingSubmission(prevState, formData) {
     contactNumber,
     description,
     guests,
-    roomtype
+    suiteText,
+    checkIn,
+    checkOut
   );
 
   await createBooking({
@@ -80,13 +95,15 @@ export async function BookingSubmission(prevState, formData) {
     contactNumber,
     description,
     guests,
-    roomtype,
+    roomtype:suiteText,
     user_id: 1,
   });
 
-  revalidatePath('/', 'layout');
+  revalidatePath('/admin/reservation_requests', 'layout');
   redirect('/');
 }
+
+
 export async function gardenImageSubmission(prevState, formData) {
   const Image = formData.get('ImageGarden');
 
@@ -110,11 +127,11 @@ export async function gardenImageSubmission(prevState, formData) {
   await createGardenImage({
     imageUrl: imageUrl,
   });
-  revalidatePath('/', 'layout');
+  revalidatePath('/gallery', 'layout');
   redirect('/admin/dashboard/garden');
 }
 export async function roomImageSubmission(prevState, formData) {
-  const Image = formData.get('ImageRoom');
+  const Image = formData.get('RoomImage');
   let errors = [];
   if (!Image || Image.size === 0) {
     errors.push('Image is required.');
@@ -135,7 +152,7 @@ export async function roomImageSubmission(prevState, formData) {
   await createRoomImage({
     imageUrl: imageUrl,
   });
-  revalidatePath('/admin/reservation_requests', 'layout');
+  revalidatePath('/gallery', 'layout');
   redirect('/admin/dashboard/room');
 }
 export async function DiningImageSubmission(prevState, formData) {
@@ -161,7 +178,7 @@ export async function DiningImageSubmission(prevState, formData) {
   await createDiningImage({
     imageUrl: imageUrl,
   });
-  revalidatePath('/', 'layout');
+  revalidatePath('/gallery', 'layout');
   redirect('/admin/dashboard/dining');
 }
 
@@ -191,3 +208,5 @@ export async function nightImageSubmission(prevState, formData) {
   revalidatePath('/gallery', 'layout');
   redirect('/admin/dashboard/night');
 }
+
+

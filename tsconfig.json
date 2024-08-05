@@ -21,6 +21,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", ".next/types/app/room/layout.tsx", "lib/sendMessage.js", "app/admin/dashboard/garden/page.jsx", "app/admin/dashboard/dinning/page.js", "app/admin/dashboard/night/page.js", "app/admin/dashboard/room/page.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", ".next/types/app/room/layout.tsx", "lib/sendMessage.js", "app/admin/dashboard/garden/page.jsx", "app/admin/dashboard/room/page.js", "app/admin/dashboard/dining/page.js", "app/gallery/page.js", "app/gallery/page.js"],
   "exclude": ["node_modules"]
 }

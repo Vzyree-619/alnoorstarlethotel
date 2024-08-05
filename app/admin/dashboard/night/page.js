@@ -1,29 +1,35 @@
+// "use client"
 import Link from 'next/link';
 import styles from '../styles.module.css';
 import DashHeader from '../../DashHeader/DashHeader';
 import DashSideBar from '../../DashSideBar/DashSideBar';
 import Image from 'next/image';
 import { MdDelete } from 'react-icons/md';
+import { getNightImage } from '@/lib/sendNightImg';
+import { deleteImageById } from '@/lib/sendNightImg';
 
-const nightUploadImage = [
-  {
-    src: '/uploadGarden/uploadImg1.png',
-  },
-  {
-    src: '/uploadGarden/uploadImg2.png',
-  },
-  {
-    src: '/uploadGarden/uploadImg3.png',
-  },
-  {
-    src: '/uploadGarden/uploadImg4.png',
-  },
-  {
-    src: '/uploadGarden/uploadImg5.png',
-  },
-];
+// const nightUploadImage = [
+//   {
+//     src: '/uploadGarden/uploadImg1.png',
+//   },
+//   {
+//     src: '/uploadGarden/uploadImg2.png',
+//   },
+//   {
+//     src: '/uploadGarden/uploadImg3.png',
+//   },
+//   {
+//     src: '/uploadGarden/uploadImg4.png',
+//   },
+//   {
+//     src: '/uploadGarden/uploadImg5.png',
+//   },
+// ];
 
-export default function DashboardManagement() {
+export default async function DashboardManagement() {
+  const nightImage = await getNightImage()
+  
+  
   return (
     <section className={styles.dashboard}>
       <DashHeader />
@@ -48,17 +54,17 @@ export default function DashboardManagement() {
                   <span>Click to add Image</span>
                 </Link>
 
-                {nightUploadImage.map((image, index) => (
+                {nightImage.map((image, index) => (
                   <span key={index} className={styles.linkBox}>
                     <Image
-                      src={image.src}
+                      src={image.image_url}
                       width={500}
                       height={500}
                       alt='Image'
                       className={styles.img}
                     />
                     <button>
-                      <MdDelete />
+                      <MdDelete  />
                     </button>
                   </span>
                 ))}

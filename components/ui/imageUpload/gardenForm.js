@@ -6,10 +6,10 @@ import DashSideBar from '@/app/admin/DashSideBar/DashSideBar';
 import DashHeader from '@/app/admin/DashHeader/DashHeader';
 
 import { useFormState } from 'react-dom';
-import DinningImageSubmit from './diningImageSubmit';
+
 import GardenImageSubmit from './gardenImageSubmit';
 
-export default function DiningImage({ action }) {
+export default function GardenForm({ action }) {
   const [state, formAction] = useFormState(action, {});
   return (
     <section className={styles.dashboard}>
