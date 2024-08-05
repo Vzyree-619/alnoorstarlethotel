@@ -56,16 +56,17 @@ export default async function ContactSubmission(prevState, formData) {
   redirect('/');
 }
 
-export async function BookingSubmission(prevState, formData,checkInDate,checkOutDate) {
-  console.log()
+export async function BookingSubmission(prevState, formData) {
+  
   const suiteMapping = {
     1: "Family Suite",
     2: "Luxury Suite",
     3: "Executive Suite",
     4: "Executive Lite"
   };
-  const checkIn = checkInDate
-  const checkOut = checkOutDate
+  const checkIn = formData.get("checkIn")
+  const checkOut = formData.get("checkOut")
+  
   const firstName = formData.get('firstName');
   const secondName = formData.get('lastName');
   const emailAddress = formData.get('emailAdd');
@@ -73,6 +74,7 @@ export async function BookingSubmission(prevState, formData,checkInDate,checkOut
   const description = formData.get('description');
   const guests = formData.get('guests');
   const roomtype = formData.get('roomtype');
+  
   const suiteText = suiteMapping[roomtype]
 
 
@@ -96,6 +98,8 @@ export async function BookingSubmission(prevState, formData,checkInDate,checkOut
     description,
     guests,
     roomtype:suiteText,
+    checkIn,
+    checkOut,
     user_id: 1,
   });
 
@@ -128,6 +132,7 @@ export async function gardenImageSubmission(prevState, formData) {
     imageUrl: imageUrl,
   });
   revalidatePath('/gallery', 'layout');
+  revalidatePath('/admin/dashboard/garden', 'layout');
   redirect('/admin/dashboard/garden');
 }
 export async function roomImageSubmission(prevState, formData) {
@@ -153,6 +158,7 @@ export async function roomImageSubmission(prevState, formData) {
     imageUrl: imageUrl,
   });
   revalidatePath('/gallery', 'layout');
+  revalidatePath('/admin/dashboard/room', 'layout');
   redirect('/admin/dashboard/room');
 }
 export async function DiningImageSubmission(prevState, formData) {
@@ -179,6 +185,7 @@ export async function DiningImageSubmission(prevState, formData) {
     imageUrl: imageUrl,
   });
   revalidatePath('/gallery', 'layout');
+  revalidatePath('/admin/dashboard/dining', 'layout');
   redirect('/admin/dashboard/dining');
 }
 
@@ -206,6 +213,7 @@ export async function nightImageSubmission(prevState, formData) {
     imageUrl: imageUrl,
   });
   revalidatePath('/gallery', 'layout');
+  revalidatePath('/admin/dashboard/night', 'layout');
   redirect('/admin/dashboard/night');
 }
 

@@ -11,6 +11,7 @@ function initDb() {
       emailAddress TEXT, 
       contactNumber TEXT NOT NULL,
       description TEXT NULL,
+      
       user_id INTEGER
      
     
@@ -56,6 +57,8 @@ db.exec(`
       description TEXT NULL,
       guests TEXT NULL,
       roomtype TEXT NOT NULL,
+      checkIn TEXT NULL,
+      checkOut TEXT NULL,
       user_id INTEGER
      
     

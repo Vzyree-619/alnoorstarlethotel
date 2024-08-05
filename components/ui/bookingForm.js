@@ -79,9 +79,9 @@ export default function bookingForm({ action }) {
               </SelectTrigger>
               <SelectContent>
                 <SelectItem value='1'>Family Suite</SelectItem>
-                <SelectItem value='2'>Executive Suite</SelectItem>
-                <SelectItem value='3'>Executive Lite</SelectItem>
-                <SelectItem value='4'>Luxury Suite</SelectItem>
+                <SelectItem value='2'>Luxury Suite</SelectItem>
+                <SelectItem value='3'>Executive Suite</SelectItem>
+                <SelectItem value='4'>Executive Lite</SelectItem>
               </SelectContent>
             </Select>
           </div>

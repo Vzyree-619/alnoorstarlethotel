@@ -16,7 +16,7 @@ export default async function Message() {
       <div className={styles.messageContainer}>
         <DashSideBar />
         <div className={styles.messageColumn}>
-          <h1>Messages</h1>
+          <h1>Reservation Requests</h1>
           <div className={styles.messageBox}>
             {/* <div className={styles.title}>
               <span>Name</span>
@@ -41,8 +41,8 @@ export default async function Message() {
                   <div className={styles.contentDiv}>Number:  <span>{contents.contactNumber}</span></div>
                   <div className={styles.contentDiv}>Guest:  <span>{contents.guests}</span></div>
                   <div className={styles.contentDiv}>Room Type:  <span>{contents.roomtype}</span></div>
-                  <div className={styles.contentDiv}>Check-In-Date:  <span>12-OCT-2024</span></div>
-                  <div className={styles.contentDiv}>Check-Out-Date:  <span>13-OCT-2024</span></div>
+                  <div className={styles.contentDiv}>Check-In-Date:  <span>{contents.checkIn}</span></div>
+                  <div className={styles.contentDiv}>Check-Out-Date:  <span>{contents.checkOut}</span></div>
                 </div>
               ))}
             </div>
