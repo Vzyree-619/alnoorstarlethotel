@@ -1,7 +1,6 @@
 .booking {
     width: 100%;
     height: auto;
-    /* padding: 1rem; */
 }
 
 .booking .bookingContainer {
@@ -50,9 +49,7 @@
     top: -4px;
     background-color: transparent;
     position: relative;
-    /* margin-left: 4px; */
     width: 12rem;
-    /* width: 75%; */
 }
 
 .form div .input {
@@ -113,11 +110,9 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    /* gap: 1px; */
 }
 
 .iconDiv svg {
-    /* margin-right: 2rem; */
     color: white;
     font-size: 1.3rem;
 }
@@ -194,7 +189,6 @@
     }
 
     .form div label {
-        /* font-weight: 600; */
         font-size: 14px;
     }
 }
