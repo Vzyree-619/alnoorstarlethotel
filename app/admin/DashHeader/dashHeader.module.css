@@ -33,6 +33,6 @@
 
 @media (max-width: 480px) and (min-width: 0) {
     .dashHeader {
-        padding: .5rem 1rem;
+        padding: 0;
     }
 }
