@@ -34,8 +34,8 @@ import Link from 'next/link';
 export default function bookingForm({ action }) {
   const [state, formAction] = useFormState(action, {});
 
-  const [checkInDate, setCheckInDate] = (useState < Date) | (null > null);
-  const [checkOutDate, setCheckOutDate] = (useState < Date) | (null > null);
+  // const [checkInDate, setCheckInDate] = (useState < Date) | (null > null);
+  // const [checkOutDate, setCheckOutDate] = (useState < Date) | (null > null);
   return (
     <section className={styles.booking}>
       <Header bgColor='transparent' />
@@ -53,67 +53,11 @@ export default function bookingForm({ action }) {
           </div>
           <div>
             <label htmlFor=''>Check In:</label>
-            <Popover>
-              <PopoverTrigger
-                className={`${styles.input} ${styles.checkInDate}`}
-                asChild
-              >
-                <Button
-                  variant={'outline'}
-                  className={
-                    'input w-[180px] justify-start text-left font-normal'
-                  }
-                >
-                  <CalendarIcon className='mr-2 h-4 w-4' />
-                  {checkInDate ? (
-                    format(checkInDate, 'PPP')
-                  ) : (
-                    <span>Pick a date</span>
-                  )}
-                </Button>
-              </PopoverTrigger>
-              <PopoverContent className='w-auto p-0'>
-                <Calendar
-                  required
-                  mode='single'
-                  selected={checkInDate || undefined}
-                  onSelect={(date) => setCheckInDate(date || null)}
-                  initialFocus
-                />
-              </PopoverContent>
-            </Popover>
+            <input type='date' name='checkIn' />
           </div>
           <div>
             <label htmlFor=''>Check Out:</label>
-            <Popover>
-              <PopoverTrigger
-                className={`${styles.input} ${styles.checkOutDate}`}
-                asChild
-              >
-                <Button
-                  variant={'outline'}
-                  className={
-                    'input w-[180px] justify-start text-left font-normal'
-                  }
-                >
-                  <CalendarIcon className='mr-2 h-4 w-4' />
-                  {checkOutDate ? (
-                    format(checkOutDate, 'PPP')
-                  ) : (
-                    <span>Pick a date</span>
-                  )}
-                </Button>
-              </PopoverTrigger>
-              <PopoverContent className='w-auto p-0'>
-                <Calendar
-                  required
-                  mode='single'
-                  selected={checkOutDate || undefined}
-                  onSelect={(date) => setCheckOutDate(date || null)}
-                  initialFocus
-                />
-              </PopoverContent>
-            </Popover>
+            <input type='date' name='checkOut' />
           </div>
           <div>
             <label htmlFor=''>Whatsapp No:</label>

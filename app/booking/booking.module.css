@@ -52,6 +52,7 @@
     position: relative;
     /* margin-left: 4px; */
     width: 12rem;
+    /* width: 75%; */
 }
 
 .form div .input {
@@ -124,7 +125,8 @@
 
 @media (max-width: 775px) and (min-width: 575px) {
     .bookingContainer .form {
-        width: 35rem;
+        width: 33rem;
+        gap: 1rem;
     }
 
 
@@ -141,14 +143,14 @@
     }
 
     .form div label {
-        /* font-weight: 600; */
         font-size: 14px;
     }
 }
 
 @media (max-width: 574px) and (min-width: 481px) {
     .bookingContainer .form {
-        width: 90vw;
+        width: 29rem;
+        gap: 1rem;
     }
 
     .form div {
@@ -164,7 +166,6 @@
     }
 
     .form div label {
-        /* font-weight: 600; */
         font-size: 14px;
     }
 }
