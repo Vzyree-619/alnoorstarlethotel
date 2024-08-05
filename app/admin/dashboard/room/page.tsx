@@ -3,6 +3,7 @@ import styles from '../styles.module.css';
 import DashHeader from '../../DashHeader/DashHeader';
 import DashSideBar from '../../DashSideBar/DashSideBar';
 import Image from 'next/image';
+import { MdDelete } from 'react-icons/md';
 
 const roomUploadImage = [
   {
@@ -56,7 +57,9 @@ export default function DashboardManagement() {
                       alt='Image'
                       className={styles.img}
                     />
-                    <button>Delete</button>
+                    <button>
+                      <MdDelete />
+                    </button>
                   </span>
                 ))}
                 {/* <span className={styles.linkBox}>Image</span>

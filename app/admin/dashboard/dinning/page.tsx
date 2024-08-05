@@ -3,6 +3,7 @@ import styles from '../styles.module.css';
 import DashHeader from '../../DashHeader/DashHeader';
 import DashSideBar from '../../DashSideBar/DashSideBar';
 import Image from 'next/image';
+import { MdDelete } from 'react-icons/md';
 
 const dinningUploadImage = [
   {
@@ -46,7 +47,6 @@ export default function DashboardManagement() {
                   />
                   <span>Click to add Image</span>
                 </Link>
-
                 {dinningUploadImage.map((image, index) => (
                   <span key={index} className={styles.linkBox}>
                     <Image
@@ -56,12 +56,11 @@ export default function DashboardManagement() {
                       alt='Image'
                       className={styles.img}
                     />
+                    <button>
+                      <MdDelete />
+                    </button>
                   </span>
                 ))}
-                {/* <span className={styles.linkBox}>Image</span>
-                <span className={styles.linkBox}>Image</span>
-                <span className={styles.linkBox}>Image</span>
-                <span className={styles.linkBox}>Image</span> */}
               </div>
             </div>
           </div>

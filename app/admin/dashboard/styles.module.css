@@ -26,6 +26,8 @@
 
 .dashboardContainer .dashboardColumn {
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .dashboard .dashboardBox {
@@ -74,19 +76,24 @@
     align-items: center;
     border-radius: 15px;
     font-size: 1.4rem;
-    /* text-align: center; */
+    text-align: center;
     font-weight: 700;
     transition: .3s;
     overflow: hidden;
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     object-fit: cover;
+    position: relative;
 }
 
 .linkBox button {
     position: absolute;
+    top: 5px;
+    right: 5px;
+    color: white;
+    font-size: 2rem;
 }
 
 .linkBox .img {
@@ -127,7 +134,7 @@
         display: flex;
         flex-direction: column;
         position: relative;
-        top: 3rem;
+        /* top: 3rem; */
         height: 74vh;
     }
 

@@ -3,6 +3,7 @@ import styles from '../styles.module.css';
 import DashHeader from '../../DashHeader/DashHeader';
 import DashSideBar from '../../DashSideBar/DashSideBar';
 import Image from 'next/image';
+import { MdDelete } from 'react-icons/md';
 
 const gardenUploadImage = [
   {
@@ -55,6 +56,9 @@ export default function DashboardManagement() {
                       alt='Image'
                       className={styles.img}
                     />
+                    <button>
+                      <MdDelete />
+                    </button>
                   </span>
                 ))}
               </div>
