@@ -2,11 +2,11 @@
 
 import Link from 'next/link';
 import styles from '@/app/admin/dashboard/upload.module.css';
-import { ImageUp } from 'lucide-react';
+
 import Image from 'next/image';
 import DashSideBar from '@/app/admin/DashSideBar/DashSideBar';
 import DashHeader from '@/app/admin/DashHeader/DashHeader';
-import SubmitImage from './diningImageSubmit';
+
 import { useFormState } from 'react-dom';
 import RoomImageSubmit from './roomImageSubmit';
 

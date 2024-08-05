@@ -4,26 +4,30 @@ import DashHeader from '../../DashHeader/DashHeader';
 import DashSideBar from '../../DashSideBar/DashSideBar';
 import Image from 'next/image';
 import { MdDelete } from 'react-icons/md';
+import { getRoomImage } from '@/lib/sendRoomImg';
+import { deleteImageById } from '@/lib/sendDiningImg';
 
-const roomUploadImage = [
-  {
-    src: '/uploadGarden/uploadImg1.png',
-  },
-  {
-    src: '/uploadGarden/uploadImg2.png',
-  },
-  {
-    src: '/uploadGarden/uploadImg3.png',
-  },
-  {
-    src: '/uploadGarden/uploadImg4.png',
-  },
-  {
-    src: '/uploadGarden/uploadImg5.png',
-  },
-];
+// const roomUploadImage = [
+//   {
+//     src: '/uploadGarden/uploadImg1.png',
+//   },
+//   {
+//     src: '/uploadGarden/uploadImg2.png',
+//   },
+//   {
+//     src: '/uploadGarden/uploadImg3.png',
+//   },
+//   {
+//     src: '/uploadGarden/uploadImg4.png',
+//   },
+//   {
+//     src: '/uploadGarden/uploadImg5.png',
+//   },
+// ];
 
-export default function DashboardManagement() {
+export default async function DashboardManagement() {
+  let roomImage = await getRoomImage()
+  
   return (
     <section className={styles.dashboard}>
       <DashHeader />
@@ -48,17 +52,17 @@ export default function DashboardManagement() {
                   <span>Click to add Image</span>
                 </Link>
 
-                {roomUploadImage.map((image, index) => (
+                {roomImage.map((image, index) => (
                   <span key={index} className={styles.linkBox}>
                     <Image
-                      src={image.src}
+                      src={image.image_url}
                       width={500}
                       height={500}
-                      alt='Image'
+                      alt='Al noor starlet hotel rooms'
                       className={styles.img}
                     />
                     <button>
-                      <MdDelete />
+                      <MdDelete onClick={deleteImageById(index)} />
                     </button>
                   </span>
                 ))}

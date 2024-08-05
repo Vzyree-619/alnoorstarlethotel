@@ -4,6 +4,7 @@ import DashHeader from '../../DashHeader/DashHeader';
 import DashSideBar from '../../DashSideBar/DashSideBar';
 import Image from 'next/image';
 import { MdDelete } from 'react-icons/md';
+import { getGardenImage } from '@/lib/sendGardenImg';
 
 const gardenUploadImage = [
   {
@@ -23,7 +24,8 @@ const gardenUploadImage = [
   },
 ];
 
-export default function DashboardManagement() {
+export default async function DashboardManagement() {
+  const gardenImage = await getGardenImage()
   return (
     <section className={styles.dashboard}>
       <DashHeader />
@@ -47,10 +49,10 @@ export default function DashboardManagement() {
                   />
                   <span>Click to add Image</span>
                 </Link>
-                {gardenUploadImage.map((image, index) => (
+                {gardenImage.map((image, index) => (
                   <span key={index} className={styles.linkBox}>
                     <Image
-                      src={image.src}
+                      src={image.image_url}
                       width={500}
                       height={500}
                       alt='Image'
