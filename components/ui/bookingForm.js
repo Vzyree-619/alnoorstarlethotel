@@ -1,4 +1,4 @@
-"use client"
+'use client';
 
 import SubmitBooking from './bookingsubmit';
 import Image from 'next/image';
@@ -33,11 +33,9 @@ import {
 import Link from 'next/link';
 export default function bookingForm({ action }) {
   const [state, formAction] = useFormState(action, {});
-  
 
-  const [checkInDate, setCheckInDate] = useState(Date);
-  const [checkOutDate, setCheckOutDate] = useState(Date);
-  
+  const [checkInDate, setCheckInDate] = (useState < Date) | (null > null);
+  const [checkOutDate, setCheckOutDate] = (useState < Date) | (null > null);
   return (
     <section className={styles.booking}>
       <Header bgColor='transparent' />
@@ -46,7 +44,7 @@ export default function bookingForm({ action }) {
         <span className={styles.span}>Enter Your Information</span>
         <form action={formAction} className={styles.form}>
           <div>
-            <label  htmlFor='firstName'>First Name:</label>
+            <label htmlFor='firstName'>First Name:</label>
             <input name='firstName' required type='text' />
           </div>
           <div>
@@ -56,7 +54,7 @@ export default function bookingForm({ action }) {
           <div>
             <label htmlFor=''>Check In:</label>
             <Popover>
-              <PopoverTrigger 
+              <PopoverTrigger
                 className={`${styles.input} ${styles.checkInDate}`}
                 asChild
               >
@@ -75,7 +73,8 @@ export default function bookingForm({ action }) {
                 </Button>
               </PopoverTrigger>
               <PopoverContent className='w-auto p-0'>
-                <Calendar required
+                <Calendar
+                  required
                   mode='single'
                   selected={checkInDate || undefined}
                   onSelect={(date) => setCheckInDate(date || null)}
@@ -89,7 +88,7 @@ export default function bookingForm({ action }) {
             <Popover>
               <PopoverTrigger
                 className={`${styles.input} ${styles.checkOutDate}`}
-                asChild 
+                asChild
               >
                 <Button
                   variant={'outline'}
@@ -98,7 +97,7 @@ export default function bookingForm({ action }) {
                   }
                 >
                   <CalendarIcon className='mr-2 h-4 w-4' />
-                  {checkOutDate   ? (
+                  {checkOutDate ? (
                     format(checkOutDate, 'PPP')
                   ) : (
                     <span>Pick a date</span>
@@ -106,7 +105,8 @@ export default function bookingForm({ action }) {
                 </Button>
               </PopoverTrigger>
               <PopoverContent className='w-auto p-0'>
-                <Calendar  required
+                <Calendar
+                  required
                   mode='single'
                   selected={checkOutDate || undefined}
                   onSelect={(date) => setCheckOutDate(date || null)}
@@ -125,19 +125,19 @@ export default function bookingForm({ action }) {
           </div>
           <div>
             <label htmlFor=''>Email Address:</label>
-            <input required type='email'  name='emailAdd'/>
+            <input required type='email' name='emailAdd' />
           </div>
           <div>
-            <label  htmlFor=''>Guest:</label>
+            <label htmlFor=''>Guest:</label>
             <Select name='roomtype' required>
               <SelectTrigger className={styles.guest}>
                 <SelectValue placeholder='Room Type' />
               </SelectTrigger>
-              <SelectContent >
-                <SelectItem  value='1'>Family Suite</SelectItem>
-                <SelectItem value='2'>Luxury Suite</SelectItem>
-                <SelectItem value='3'>Executive Suite</SelectItem>
-                <SelectItem value='4'>Executive Lite</SelectItem>
+              <SelectContent>
+                <SelectItem value='1'>Family Suite</SelectItem>
+                <SelectItem value='2'>Executive Suite</SelectItem>
+                <SelectItem value='3'>Executive Lite</SelectItem>
+                <SelectItem value='4'>Luxury Suite</SelectItem>
               </SelectContent>
             </Select>
           </div>
@@ -146,7 +146,7 @@ export default function bookingForm({ action }) {
             <textarea name='description' id=''></textarea>
           </div>
           <div className={styles.buttonDiv}>
-            <SubmitBooking/>
+            <SubmitBooking />
           </div>
           <div className={styles.iconDiv}>
             {/* <button className={styles.bookNow}>Book Now</button> */}

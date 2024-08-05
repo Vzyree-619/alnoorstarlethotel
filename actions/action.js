@@ -6,6 +6,7 @@ import { createBooking } from '@/lib/sendBooking';
 
 import { createRoomImage } from '@/lib/sendRoomImg';
 
+
 import { uploadImage } from '@/lib/cloudinary';
 import { createNightImage } from '@/lib/sendNightImg';
 import { createDiningImage } from '@/lib/sendDiningImg';
@@ -15,6 +16,7 @@ export default async function ContactSubmission(prevState, formData) {
   const firstName = formData.get('firstN');
   const secondName = formData.get('secondN');
   const emailAddress = formData.get('email');
+  
   const contactNumber = formData.get('Number');
   const description = formData.get('description');
   console.log(firstName, secondName, emailAddress, contactNumber, description,);
@@ -100,6 +102,8 @@ export async function BookingSubmission(prevState, formData,checkInDate,checkOut
   revalidatePath('/admin/reservation_requests', 'layout');
   redirect('/');
 }
+
+
 export async function gardenImageSubmission(prevState, formData) {
   const Image = formData.get('ImageGarden');
 
@@ -127,7 +131,7 @@ export async function gardenImageSubmission(prevState, formData) {
   redirect('/admin/dashboard/garden');
 }
 export async function roomImageSubmission(prevState, formData) {
-  const Image = formData.get('ImageRoom');
+  const Image = formData.get('RoomImage');
   let errors = [];
   if (!Image || Image.size === 0) {
     errors.push('Image is required.');
@@ -148,7 +152,7 @@ export async function roomImageSubmission(prevState, formData) {
   await createRoomImage({
     imageUrl: imageUrl,
   });
-  revalidatePath('/admin/reservation_requests', 'layout');
+  revalidatePath('/gallery', 'layout');
   redirect('/admin/dashboard/room');
 }
 export async function DiningImageSubmission(prevState, formData) {
@@ -204,3 +208,5 @@ export async function nightImageSubmission(prevState, formData) {
   revalidatePath('/gallery', 'layout');
   redirect('/admin/dashboard/night');
 }
+
+

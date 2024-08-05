@@ -26,8 +26,8 @@
 
 .dashboardContainer .dashboardColumn {
     text-align: center;
-    display: flex;
-    flex-direction: column;
+    margin-top: 1rem;
+    height: 26rem;
 }
 
 .dashboard .dashboardBox {
@@ -129,7 +129,7 @@
     }
 }
 
-@media (max-width: 768px) and (min-width: 584px) {
+@media (max-width: 768px) and (min-width: 643px) {
     .dashboard .dashboardBox {
         display: flex;
         flex-direction: column;
@@ -153,33 +153,32 @@
     }
 }
 
-@media (max-width: 583px) and (min-width: 550px) {
-    .dashboard .linkBox {
-        width: 10rem;
-        height: 10rem;
-    }
-
-    .dashboardBox .grid {
-        width: 100%;
-        height: 54vh;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        overflow-y: scroll;
-        gap: 1rem;
-    }
-
-    .dashboard .linkBox {
-        width: 10rem;
+@media (max-width: 643px) and (min-width: 584px) {
+    .dashboard .dashboardBox {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        height: 72vh;
     }
 
     .dashboardContainer .dashboardRow {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
         gap: 1rem;
-        padding: 1rem;
+    }
+
+    .dashboardRow .linkBox {
+        width: 10rem;
+        height: 10rem;
     }
 }
 
-@media (max-width: 549px) and (min-width: 481px) {
+
+@media (max-width: 585px) and (min-width: 481px) {
     .dashboard .linkBox {
         width: 12rem;
         height: 12rem;
@@ -197,36 +196,40 @@
 
     .dashboardContainer .dashboardRow {
         gap: 1rem;
-        padding: 1rem;
+    }
+
+    .dashboardContainer .dashboardContainer {
+        margin-top: 1rem;
+        height: 28rem;
+        width: 88vw;
     }
 }
 
 @media (max-width: 480px) and (min-width: 0px) {
-    .dashboardContainer .dashboardRow {
-        gap: 1rem;
-        padding: 1rem;
-    }
-
     .dashboard .linkBox {
-        width: 100%;
-        height: 15rem;
+        width: 70vw;
+        height: 70vw;
     }
 
     .dashboardContainer .dashboardColumn {
         text-align: center;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: start;
         align-items: center;
-        margin-top: 3rem;
+        top: 0rem;
+        position: relative;
+        width: 86vw;
     }
 
     .dashboard .dashboardBox {
         height: auto;
+        position: relative;
+        /* top: 25rem; */
     }
 
     .dashboardBox .grid {
-        width: 90vw;
+        width: 100%;
         height: 100%;
         display: flex;
         flex-direction: column;

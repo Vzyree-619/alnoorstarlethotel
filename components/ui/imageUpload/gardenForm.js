@@ -9,7 +9,7 @@ import { useFormState } from 'react-dom';
 
 import GardenImageSubmit from './gardenImageSubmit';
 
-export default function DiningImage({ action }) {
+export default function GardenForm({ action }) {
   const [state, formAction] = useFormState(action, {});
   return (
     <section className={styles.dashboard}>

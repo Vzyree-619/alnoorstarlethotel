@@ -62,7 +62,7 @@ export default async function DashboardManagement() {
                       className={styles.img}
                     />
                     <button>
-                      <MdDelete onClick={deleteImageById(index)} />
+                      <MdDelete />
                     </button>
                   </span>
                 ))}

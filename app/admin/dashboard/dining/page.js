@@ -6,27 +6,11 @@ import Image from 'next/image';
 import { getDiningImage } from '@/lib/sendDiningImg';
 import { deleteImageById } from '@/lib/sendDiningImg';
 
-const dinningUploadImage = [
-  {
-    src: '/uploadGarden/uploadImg1.png',
-  },
-  {
-    src: '/uploadGarden/uploadImg2.png',
-  },
-  {
-    src: '/uploadGarden/uploadImg3.png',
-  },
-  {
-    src: '/uploadGarden/uploadImg4.png',
-  },
-  {
-    src: '/uploadGarden/uploadImg5.png',
-  },
-];
+
 
 export default async function DashboardManagement() {
   let diningImage = await getDiningImage()
-  let deleteImage = deleteImageById(index)
+  // let deleteImage = deleteImageById(index)
   return (
     <section className={styles.dashboard}>
       <DashHeader />
@@ -40,7 +24,7 @@ export default async function DashboardManagement() {
               <div className={styles.grid}>
                 <Link
                   className={`${styles.linkBox} ${styles.upload}`}
-                  href={'/admin/dashboard/dinning/upload'}
+                  href={'/admin/dashboard/dining/upload'}
                 >
                   <Image
                     src='/icon.png'

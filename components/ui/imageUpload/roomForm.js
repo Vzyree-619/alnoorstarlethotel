@@ -38,7 +38,7 @@ export default function RoomImage({ action }) {
                 <input
                   type='file'
                   placeholder='Choose Image'
-                  name='ImageGarden'
+                  name='RoomImage'
                   id=''
                 />
 

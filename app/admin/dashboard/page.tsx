@@ -20,7 +20,7 @@ export default function DashboardManagement() {
                 Room
               </Link>
               <Link
-                href={'/admin/dashboard/dinning'}
+                href={'/admin/dashboard/dining'}
                 className={styles.linkBox}
               >
                 Dinning

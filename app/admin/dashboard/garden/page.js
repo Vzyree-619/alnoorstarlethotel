@@ -5,6 +5,7 @@ import DashSideBar from '../../DashSideBar/DashSideBar';
 import Image from 'next/image';
 import { MdDelete } from 'react-icons/md';
 import { getGardenImage } from '@/lib/sendGardenImg';
+import { deleteImageById } from '@/lib/sendNightImg';
 
 const gardenUploadImage = [
   {
@@ -26,6 +27,7 @@ const gardenUploadImage = [
 
 export default async function DashboardManagement() {
   const gardenImage = await getGardenImage()
+  console.log(gardenImage)
   return (
     <section className={styles.dashboard}>
       <DashHeader />
@@ -59,7 +61,7 @@ export default async function DashboardManagement() {
                       className={styles.img}
                     />
                     <button>
-                      <MdDelete />
+                      <MdDelete/>
                     </button>
                   </span>
                 ))}

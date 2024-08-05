@@ -1,6 +1,7 @@
-import { DiningImageSubmission } from '@/actions/action';
-import GardenImage from '@/components/ui/imageUpload/diningForm';
+import { gardenImageSubmission } from '@/actions/action';
+import GardenForm from "@/components/ui/imageUpload/gardenForm"
+
 
 export default function DashboardManagement() {
-  return <GardenImage action={DiningImageSubmission} />;
+  return <GardenForm action={gardenImageSubmission} />;
 }
