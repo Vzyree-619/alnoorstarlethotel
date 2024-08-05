@@ -4,6 +4,24 @@ import DashHeader from '../../DashHeader/DashHeader';
 import DashSideBar from '../../DashSideBar/DashSideBar';
 import Image from 'next/image';
 
+const roomUploadImage = [
+  {
+    src: '/uploadGarden/uploadImg1.png',
+  },
+  {
+    src: '/uploadGarden/uploadImg2.png',
+  },
+  {
+    src: '/uploadGarden/uploadImg3.png',
+  },
+  {
+    src: '/uploadGarden/uploadImg4.png',
+  },
+  {
+    src: '/uploadGarden/uploadImg5.png',
+  },
+];
+
 export default function DashboardManagement() {
   return (
     <section className={styles.dashboard}>
@@ -28,51 +46,19 @@ export default function DashboardManagement() {
                   />
                   <span>Click to add Image</span>
                 </Link>
-                <span className={styles.linkBox}>
-                  <Image
-                    src={'/uploadGarden/uploadImg1.png'}
-                    width={500}
-                    height={500}
-                    alt='Image'
-                    className={styles.img}
-                  />
-                </span>
-                <span className={styles.linkBox}>
-                  <Image
-                    src={'/uploadGarden/uploadImg2.png'}
-                    width={500}
-                    height={500}
-                    alt='Image'
-                    className={styles.img}
-                  />
-                </span>
-                <span className={styles.linkBox}>
-                  <Image
-                    src={'/uploadGarden/uploadImg3.png'}
-                    width={500}
-                    height={500}
-                    alt='Image'
-                    className={styles.img}
-                  />
-                </span>
-                <span className={styles.linkBox}>
-                  <Image
-                    src={'/uploadGarden/uploadImg4.png'}
-                    width={500}
-                    height={500}
-                    alt='Image'
-                    className={styles.img}
-                  />
-                </span>
-                <span className={styles.linkBox}>
-                  <Image
-                    src={'/uploadGarden/uploadImg5.png'}
-                    width={500}
-                    height={500}
-                    alt='Image'
-                    className={styles.img}
-                  />
-                </span>
+
+                {roomUploadImage.map((image, index) => (
+                  <span key={index} className={styles.linkBox}>
+                    <Image
+                      src={image.src}
+                      width={500}
+                      height={500}
+                      alt='Image'
+                      className={styles.img}
+                    />
+                    <button>Delete</button>
+                  </span>
+                ))}
                 {/* <span className={styles.linkBox}>Image</span>
                 <span className={styles.linkBox}>Image</span>
                 <span className={styles.linkBox}>Image</span>

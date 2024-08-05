@@ -152,6 +152,7 @@ export async function DiningImageSubmission(prevState, formData) {
   let imageUrl;
   try {
     imageUrl = await uploadImage(Image);
+    console.log(imageUrl)
   } catch (error) {
     throw new Error(
       'Image upload failed, post was not created. Please try again later.'
@@ -187,6 +188,6 @@ export async function nightImageSubmission(prevState, formData) {
   await createNightImage({
     imageUrl: imageUrl,
   });
-  revalidatePath('/', 'layout');
+  revalidatePath('/gallery', 'layout');
   redirect('/admin/dashboard/night');
 }

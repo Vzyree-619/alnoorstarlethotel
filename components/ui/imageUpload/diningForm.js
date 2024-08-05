@@ -35,7 +35,7 @@ export default function DiningImage({ action }) {
                 <input
                   type='file'
                   placeholder='Choose Image'
-                  name='ImageGarden'
+                  name='ImageDining'
                   id=''
                 />
 

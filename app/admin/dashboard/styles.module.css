@@ -74,11 +74,19 @@
     align-items: center;
     border-radius: 15px;
     font-size: 1.4rem;
-    text-align: center;
+    /* text-align: center; */
     font-weight: 700;
     transition: .3s;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     object-fit: cover;
+}
+
+.linkBox button {
+    position: absolute;
 }
 
 .linkBox .img {
