@@ -4,6 +4,78 @@ import Header from '../Components/Header/Header';
 import styles from './gallery.module.css';
 import Footer from '../Components/Footer/Footer';
 
+const GardenImage = [
+  {
+    image: '/roomImg2.png',
+  },
+  {
+    image: '/garden/Frame29003.png',
+  },
+  {
+    image: '/garden/Frame29002.png',
+  },
+  {
+    image: '/gallery/img1.png',
+  },
+  {
+    image: '/garden/Frame29002.png',
+  },
+  {
+    image: '/garden/Frame29003.png',
+  },
+];
+
+const RoomImage = [
+  {
+    image: '/roomImg2.png',
+  },
+  {
+    image: '/roomImg1.png',
+  },
+  {
+    image: '/gallery/img5.png',
+  },
+  {
+    image: '/roomImg3.png',
+  },
+  {
+    image: '/gallery/img7.png',
+  },
+  {
+    image: '/roomImg4.png',
+  },
+  {
+    image: '/luxurySuiteImg/img3.png',
+  },
+  {
+    image: '/gallery/img9.png',
+  },
+  {
+    image: '/gallery/img10.png',
+  },
+];
+
+const DinningImage = [
+  {
+    image: '/gallery/img12.png',
+  },
+  {
+    image: '/gallery/img11.png',
+  },
+  {
+    image: '/gallery/img12.png',
+  },
+  {
+    image: '/gallery/img11.png',
+  },
+  {
+    image: '/gallery/img12.png',
+  },
+  {
+    image: '/gallery/img11.png',
+  },
+];
+
 const GalleryImage = [
   {
     image: '/gallery/img1.png',
@@ -30,205 +102,49 @@ export default function Gallery() {
           <div className={styles.photoColumn}>
             <h1>Garden</h1>
             <div className={styles.photoGrid}>
-              <div className={styles.photoBox}>
-                <Image
-                  className={styles.galleryImg}
-                  src={'/gallery/img1.png'}
-                  width={600}
-                  height={600}
-                  alt='Gallery Image'
-                />
-              </div>
-              <div className={styles.photoBox}>
-                <Image
-                  className={styles.galleryImg}
-                  src={'/garden/Frame29003.png'}
-                  width={600}
-                  height={600}
-                  alt='Gallery Image'
-                />
-              </div>
-              <div className={styles.photoBox}>
-                <Image
-                  className={styles.galleryImg}
-                  src={'/garden/Frame29002.png'}
-                  width={600}
-                  height={600}
-                  alt='Gallery Image'
-                />
-              </div>
-              <div className={styles.photoBox}>
-                <Image
-                  className={styles.galleryImg}
-                  src={'/gallery/img1.png'}
-                  width={600}
-                  height={600}
-                  alt='Gallery Image'
-                />
-              </div>
-              <div className={styles.photoBox}>
-                <Image
-                  className={styles.galleryImg}
-                  src={'/garden/Frame29002.png'}
-                  width={600}
-                  height={600}
-                  alt='Gallery Image'
-                />
-              </div>
-              <div className={styles.photoBox}>
-                <Image
-                  className={styles.galleryImg}
-                  src={'/garden/Frame29003.png'}
-                  width={600}
-                  height={600}
-                  alt='Gallery Image'
-                />
-              </div>
+              {GardenImage.map((image, index) => (
+                <div key={index} className={styles.photoBox}>
+                  <Image
+                    className={styles.galleryImg}
+                    src={image.image}
+                    width={600}
+                    height={600}
+                    alt='Gallery Image'
+                  />
+                </div>
+              ))}
             </div>
           </div>
           <div className={styles.photoColumn}>
             <h1>Room</h1>
             <div className={styles.photoGrid}>
-              <div className={styles.photoBox}>
-                <Image
-                  className={styles.galleryImg}
-                  src={'/roomImg2.png'}
-                  width={600}
-                  height={600}
-                  alt='Gallery Image'
-                />
-              </div>
-              <div className={styles.photoBox}>
-                <Image
-                  className={styles.galleryImg}
-                  src={'/roomImg1.png'}
-                  width={600}
-                  height={600}
-                  alt='Gallery Image'
-                />
-              </div>
-              <div className={styles.photoBox}>
-                <Image
-                  className={styles.galleryImg}
-                  src={'/gallery/img5.png'}
-                  width={600}
-                  height={600}
-                  alt='Gallery Image'
-                />
-              </div>
-              <div className={styles.photoBox}>
-                <Image
-                  className={styles.galleryImg}
-                  src={'/roomImg3.png'}
-                  width={600}
-                  height={600}
-                  alt='Gallery Image'
-                />
-              </div>
-              <div className={styles.photoBox}>
-                <Image
-                  className={styles.galleryImg}
-                  src={'/gallery/img7.png'}
-                  width={600}
-                  height={600}
-                  alt='Gallery Image'
-                />
-              </div>
-              <div className={styles.photoBox}>
-                <Image
-                  className={styles.galleryImg}
-                  src={'/roomImg4.png'}
-                  width={600}
-                  height={600}
-                  alt='Gallery Image'
-                />
-              </div>
-              <div className={styles.photoBox}>
-                <Image
-                  className={styles.galleryImg}
-                  src={'/luxurySuiteImg/img3.png'}
-                  width={600}
-                  height={600}
-                  alt='Gallery Image'
-                />
-              </div>
-              <div className={styles.photoBox}>
-                <Image
-                  className={styles.galleryImg}
-                  src={'/gallery/img9.png'}
-                  width={600}
-                  height={600}
-                  alt='Gallery Image'
-                />
-              </div>
-              <div className={styles.photoBox}>
-                <Image
-                  className={styles.galleryImg}
-                  src={'/gallery/img10.png'}
-                  width={600}
-                  height={600}
-                  alt='Gallery Image'
-                />
-              </div>
+              {RoomImage.map((image, index) => (
+                <div key={index} className={styles.photoBox}>
+                  <Image
+                    className={styles.galleryImg}
+                    src={image.image}
+                    width={600}
+                    height={600}
+                    alt='Gallery Image'
+                  />
+                </div>
+              ))}
             </div>
           </div>
           <div className={styles.photoColumn}>
             <h1>Dinning</h1>
             <div className={styles.photoGrid}>
-              <div className={styles.photoBox}>
-                <Image
-                  className={styles.galleryImg}
-                  src={'/gallery/img12.png'}
-                  width={600}
-                  height={600}
-                  alt='Gallery Image'
-                />
-              </div>
-              <div className={styles.photoBox}>
-                <Image
-                  className={styles.galleryImg}
-                  src={'/gallery/img11.png'}
-                  width={600}
-                  height={600}
-                  alt='Gallery Image'
-                />
-              </div>
-              <div className={styles.photoBox}>
-                <Image
-                  className={styles.galleryImg}
-                  src={'/gallery/img12.png'}
-                  width={600}
-                  height={600}
-                  alt='Gallery Image'
-                />
-              </div>
-              <div className={styles.photoBox}>
-                <Image
-                  className={styles.galleryImg}
-                  src={'/gallery/img11.png'}
-                  width={600}
-                  height={600}
-                  alt='Gallery Image'
-                />
-              </div>
-              <div className={styles.photoBox}>
-                <Image
-                  className={styles.galleryImg}
-                  src={'/gallery/img12.png'}
-                  width={600}
-                  height={600}
-                  alt='Gallery Image'
-                />
-              </div>
-              <div className={styles.photoBox}>
-                <Image
-                  className={styles.galleryImg}
-                  src={'/gallery/img11.png'}
-                  width={600}
-                  height={600}
-                  alt='Gallery Image'
-                />
-              </div>
+              {DinningImage.map((image, index) => (
+                <div key={index} className={styles.photoBox}>
+                  <Image
+                    className={styles.galleryImg}
+                    src={image.image}
+                    width={600}
+                    height={600}
+                    alt='Gallery Image'
+                  />
+                </div>
+              ))}
             </div>
           </div>
           <div className={styles.photoColumn}>
