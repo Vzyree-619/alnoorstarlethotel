@@ -188,6 +188,6 @@ export async function nightImageSubmission(prevState, formData) {
   await createNightImage({
     imageUrl: imageUrl,
   });
-  revalidatePath('/', 'layout');
+  revalidatePath('/gallery', 'layout');
   redirect('/admin/dashboard/night');
 }
