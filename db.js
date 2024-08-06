@@ -1,6 +1,34 @@
 import sql from 'better-sqlite3';
 
-const db = new sql('posts.db');
+
+
+
+import path from 'path';
+import fs from 'fs';
+import sql from 'better-sqlite3';
+
+// Get the database path from environment variables or use default
+const dbPath = process.env.DATABASE_PATH || path.join(process.cwd(), 'data', 'posts.db');
+
+// Ensure the directory exists
+const dbDir = path.dirname(dbPath);
+if (!fs.existsSync(dbDir)) {
+  fs.mkdirSync(dbDir, { recursive: true });
+}
+
+// Ensure the database file exists
+if (!fs.existsSync(dbPath)) {
+  fs.writeFileSync(dbPath, '');
+}
+
+let db;
+try {
+  db = new sql('posts.db');
+  console.log(`Connected to the database at ${db}`);
+} catch (error) {
+  console.error('Failed to connect to the database', error);
+  process.exit(1);
+}
 
 function initDb() {
   db.exec(`
@@ -57,7 +85,7 @@ db.exec(`
       description TEXT NULL,
       guests TEXT NULL,
       roomtype TEXT NOT NULL,
-      checkIn TEXT NULL,
+      checkIn TEXT NULL,  
       checkOut TEXT NULL,
       user_id INTEGER
      
@@ -67,5 +95,7 @@ db.exec(`
 
 
 initDb();
+
+
 
 export default db;
