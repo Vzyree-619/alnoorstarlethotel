@@ -8,9 +8,7 @@ import fs from 'fs';
 import sql from 'better-sqlite3';
 
 // Get the database path from environment variables or use default
-import path from 'path';
-import fs from 'fs';
-import sql from 'better-sqlite3';
+
 
 // Determine the database path
 const isProduction = process.env.NODE_ENV === 'production';
