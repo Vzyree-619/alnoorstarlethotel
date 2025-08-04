@@ -12,7 +12,7 @@ export default function NewsLetter() {
         <form action=''>
           <input type='email' placeholder='Your Email' />
           <button>
-            <LuSendHorizonal />
+            <LuSendHorizontal />
           </button>
         </form>
       </div>
