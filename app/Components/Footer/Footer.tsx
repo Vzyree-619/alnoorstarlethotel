@@ -22,7 +22,8 @@ export default function Footer() {
             alt='Logo'
           />
           <p className={styles.footerPara}>
-            Al Noor Starlet Hotel offers luxurious accommodations and
+            Al Noor Starlet Hotel offers luxurious
+             accommodations and
             exceptional hospitality.
           </p>
         </div>
@@ -69,7 +70,7 @@ export default function Footer() {
         </div>
       </div>
       <div className={styles.footerBottom}>
-        <p> &copy; 2024 AL Noor Starlet Hotel | All rights reserved</p>
+        <p> &copy; 2025 AL Noor Starlet Hotel | All rights reserved</p>
         <p>developed & designed by 619 Technologies</p>
       </div>
     </footer>

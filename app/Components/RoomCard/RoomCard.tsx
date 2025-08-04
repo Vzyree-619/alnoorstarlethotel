@@ -17,9 +17,31 @@ interface RoomProp {
 
 const roomData: RoomProp[] = [
   {
+    roomImage: '/roomImg0.png',
+    roomTitle: 'Royal Suite',
+    roomPrice: '32,000',
+    roomBeds: '2 rooms - 5 Beds (1 Master + 4 Single Bed)',
+    buttons: [
+      'Breakfast Included',
+      'Air Conditioned',
+      '6 Adults',
+      'Free Cancellation',
+      '2 Private Bathrooms',
+      
+    ],
+    icons: [
+      <IoIosStar key='star1' />,
+      <IoIosStar key='star2' />,
+      <IoIosStar key='star3' />,
+      <IoIosStar key='star4' />,
+      <FaStarHalfAlt key='star5' />,
+    ],
+    href: '/room/royalSuite',
+  },
+  {
     roomImage: '/roomImg1.png',
     roomTitle: 'Family Suite',
-    roomPrice: '28,000',
+    roomPrice: '30,000',
     roomBeds: '3 Beds (1 Master + 2 Single Bed)',
     buttons: [
       'Breakfast Included',
@@ -40,8 +62,8 @@ const roomData: RoomProp[] = [
   },
   {
     roomImage: '/roomImg2.png',
-    roomTitle: 'Luxury Suite',
-    roomPrice: '23,000',
+    roomTitle: 'Executive King',
+    roomPrice: '20,000',
     roomBeds: '1 Bed (1 Master Bed)',
     buttons: [
       'Breakfast Included',
@@ -57,12 +79,12 @@ const roomData: RoomProp[] = [
       <IoIosStar key='star4' />,
       <FaStarHalfAlt key='star5' />,
     ],
-    href: '/room/luxurySuite',
+    href: '/room/executiveKing',
   },
   {
     roomImage: '/roomImg3.png',
-    roomTitle: 'Executive Suite',
-    roomPrice: '23,000',
+    roomTitle: 'Executive Triple',
+    roomPrice: '21,000',
     roomBeds: '2 Bed (1 Master + 1 Single Bed) ',
     buttons: [
       'Breakfast Included',
@@ -78,13 +100,55 @@ const roomData: RoomProp[] = [
       <IoIosStar key='star4' />,
       <FaStarHalfAlt key='star5' />,
     ],
-    href: '/room/executiveSuite',
+    href: '/room/executiveTripleSharing',
   },
   {
-    roomImage: '/roomImg4.png',
-    roomTitle: 'Executive Lite',
+    roomImage: '/executiveQuadSharing/img1.png',
+    roomTitle: 'Executive Quad',
+    roomPrice: '22,000',
+    roomBeds: '3 Bed (1 Master + 2 Single Bed) ',
+    buttons: [
+      'Breakfast Included',
+      'Air Conditioned',
+      '3 Adults',
+      'Free Cancellation',
+      'Private Bathroom',
+    ],
+    icons: [
+      <IoIosStar key='star1' />,
+      <IoIosStar key='star2' />,
+      <IoIosStar key='star3' />,
+      <IoIosStar key='star4' />,
+      <FaStarHalfAlt key='star5' />,
+    ],
+    href: '/room/executiveQuadSharing',
+  },
+  {
+    roomImage: '/roomImage.png',
+    roomTitle: 'Deluxe Room',
     roomPrice: '13,000',
     roomBeds: '2 Bed (1 Master + 1 Single Bed) ',
+    buttons: [
+      'Breakfast Included',
+      'Air Conditioner',
+      '3 Adults',
+      'Free Cancellation',
+      'Private Bathroom',
+    ],
+    icons: [
+      <IoIosStar key='star1' />,
+      <IoIosStar key='star2' />,
+      <IoIosStar key='star3' />,
+      <IoIosStar key='star4' />,
+      <FaStarHalfAlt key='star5' />,
+    ],
+    href: '/room/deluxe',
+  },
+  {
+    roomImage: '/standard/img4.png',
+    roomTitle: 'Standard Room',
+    roomPrice: '11,000',
+    roomBeds: '2 Beds (2 Double + 1 Single Bed) ',
     buttons: [
       'Breakfast Included',
       'Without AC',
@@ -99,7 +163,7 @@ const roomData: RoomProp[] = [
       <IoIosStar key='star4' />,
       <FaStarHalfAlt key='star5' />,
     ],
-    href: '/room/executiveLite',
+    href: '/room/standard',
   },
 ];
 
@@ -111,6 +175,7 @@ export default function RoomCard() {
           <div className={styles.rowImg}>
             <Image
               src={roomContent.roomImage}
+              
               width={350}
               height={325}
               alt='Room Image'

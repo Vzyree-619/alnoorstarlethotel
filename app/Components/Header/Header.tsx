@@ -26,7 +26,7 @@ export default function Header({ bgColor }: HeaderProps) {
           src={'/logo.png'}
           alt='logo'
           className={styles.logo}
-          width={464}
+          width={250}
           height={75}
         />
       </Link>
