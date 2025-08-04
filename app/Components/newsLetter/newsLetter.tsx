@@ -1,4 +1,4 @@
-import { LuSendHorizonal } from 'react-icons/lu';
+import { LuSendHorizontal } from 'react-icons/lu';
 import styles from './newsLetter.module.css';
 
 export default function NewsLetter() {
